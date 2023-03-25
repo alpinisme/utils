@@ -1,5 +1,13 @@
 import { describe, expect, test } from 'vitest';
-import { duplicates, insertNth, removeNth, sortByNumber, sortByString, take } from './array';
+import {
+  duplicates,
+  insertNth,
+  removeNth,
+  sortByNumber,
+  sortByString,
+  take,
+  updateNth,
+} from './array';
 
 describe('sorting, finding duplicates, and finding uniques', () => {
   const people = () => [
@@ -100,5 +108,9 @@ describe('array manipulation', () => {
 
   test('inserting items at negative indexes should append to beginning', () => {
     expect(insertNth(arr, -100, 100)).toEqual([100, 1, 2, 3, 4, 5, 6, 7]);
+  });
+
+  test('updating item at Nth index', () => {
+    expect(updateNth(arr, 0, (x) => x + 1)).toEqual([2, 2, 3, 4, 5, 6, 7]);
   });
 });

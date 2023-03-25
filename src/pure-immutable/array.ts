@@ -50,6 +50,14 @@ export function insertNth<T>(arr: T[], index: number, item: T) {
     .concat(takeRight(arr, arr.length - index));
 }
 
+export function updateNth<T>(arr: T[], index: number, updater: (old: T) => T) {
+  if (index < -arr.length || index > arr.length) return arr;
+  const updatedValue = updater(arr.at(index) as T); // bounds checks above guarantee this
+  return take(arr, index)
+    .concat([updatedValue])
+    .concat(takeRight(arr, arr.length - (index + 1)));
+}
+
 export function removeNth<T>(arr: T[], index: number) {
   return take(arr, index).concat(takeRight(arr, arr.length - (index + 1)));
 }
