@@ -1,0 +1,23 @@
+{
+  "ts-node": {
+    "esm": true,
+    "experimentalSpecifierResolution": "node"
+  },
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "esModuleInterop": true,
+    "removeComments": true,
+    "declaration": true,
+    "outDir": "./dist",
+    "preserveConstEnums": true,
+    "strict": true,
+    "noUnusedLocals": true,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "forceConsistentCasingInFileNames": true,
+    "importHelpers": true
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "src/**/*.test.ts", "src/**/*.temp.ts"]
+}
