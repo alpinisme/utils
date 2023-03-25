@@ -807,6 +807,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"husky@npm:^8.0.0":
+  version: 8.0.3
+  resolution: "husky@npm:8.0.3"
+  bin:
+    husky: lib/bin.js
+  checksum: 837bc7e4413e58c1f2946d38fb050f5d7324c6f16b0fd66411ffce5703b294bd21429e8ba58711cd331951ee86ed529c5be4f76805959ff668a337dbfa82a1b0
+  languageName: node
+  linkType: hard
+
 "iconv-lite@npm:^0.6.2":
   version: 0.6.3
   resolution: "iconv-lite@npm:0.6.3"
@@ -1566,6 +1575,26 @@ __metadata:
   languageName: node
   linkType: hard
 
+"typescript@npm:^5.0.2":
+  version: 5.0.2
+  resolution: "typescript@npm:5.0.2"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: bef1dcd166acfc6934b2ec4d72f93edb8961a5fab36b8dd2aaf6f4f4cd5c0210f2e0850aef4724f3b4913d5aef203a94a28ded731b370880c8bcff7e4ff91fc1
+  languageName: node
+  linkType: hard
+
+"typescript@patch:typescript@^5.0.2#~builtin<compat/typescript>":
+  version: 5.0.2
+  resolution: "typescript@patch:typescript@npm%3A5.0.2#~builtin<compat/typescript>::version=5.0.2&hash=85af82"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: b63cb742fbb9aeb3085e002ad8f10d5fd963606aa4d6b3b65b4e76c396ff09739f03b5dbae08e1698c3bce9d5619d3f67aeb7ee470ed4016bd345b3cfe37b54a
+  languageName: node
+  linkType: hard
+
 "ufo@npm:^1.1.1":
   version: 1.1.1
   resolution: "ufo@npm:1.1.1"
@@ -1602,6 +1631,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "utils@workspace:."
   dependencies:
+    husky: ^8.0.0
+    typescript: ^5.0.2
+    vite: ^4.2.1
     vitest: ^0.29.7
   languageName: unknown
   linkType: soft
@@ -1622,7 +1654,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:^3.0.0 || ^4.0.0":
+"vite@npm:^3.0.0 || ^4.0.0, vite@npm:^4.2.1":
   version: 4.2.1
   resolution: "vite@npm:4.2.1"
   dependencies:

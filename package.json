@@ -6,9 +6,13 @@
   "scripts": {
     "test": "vitest run",
     "test:watch": "vitest",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "postinstall": "husky install"
   },
   "devDependencies": {
+    "husky": "^8.0.0",
+    "typescript": "^5.0.2",
+    "vite": "^4.2.1",
     "vitest": "^0.29.7"
   }
 }
