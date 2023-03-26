@@ -14,23 +14,29 @@
 
 ### capitalize
 
-▸ **capitalize**(`str`): `string`
+▸ **capitalize**<`T`\>(`str`): `Capitalize`<`T`\>
 
 Capitalize each word (e.g., 'this string' -> 'This String')
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | extends `string` |
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `str` | `string` |
+| `str` | `T` |
 
 #### Returns
 
-`string`
+`Capitalize`<`T`\>
 
 #### Defined in
 
-[pure-immutable/string.ts:25](https://github.com/alpinisme/utils/blob/a9c02a4/src/pure-immutable/string.ts#L25)
+[src/pure-immutable/string.ts:25](https://github.com/alpinisme/utils/blob/42a5f03/src/pure-immutable/string.ts#L25)
 
 ___
 
@@ -59,7 +65,7 @@ toPascalCase("My friend\n the     1st sharK") // -> MY_FRIEND_THE_1ST_SHARK
 
 #### Defined in
 
-[pure-immutable/string.ts:7](https://github.com/alpinisme/utils/blob/a9c02a4/src/pure-immutable/string.ts#L7)
+[src/pure-immutable/string.ts:7](https://github.com/alpinisme/utils/blob/42a5f03/src/pure-immutable/string.ts#L7)
 
 ___
 
@@ -88,4 +94,4 @@ toPascalCase("My friend\n the     1st sharK") // -> my_friend_the_1st_shark
 
 #### Defined in
 
-[pure-immutable/string.ts:17](https://github.com/alpinisme/utils/blob/a9c02a4/src/pure-immutable/string.ts#L17)
+[src/pure-immutable/string.ts:17](https://github.com/alpinisme/utils/blob/42a5f03/src/pure-immutable/string.ts#L17)

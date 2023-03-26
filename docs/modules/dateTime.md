@@ -6,12 +6,16 @@
 
 ### Enumerations
 
-- [Duration](../enums/dateTime.Duration.md)
+- [DurationUnits](../enums/dateTime.DurationUnits.md)
+
+### Classes
+
+- [DurationMS](../classes/dateTime.DurationMS.md)
 
 ### Functions
 
 - [addDuration](dateTime.md#addduration)
-- [getDurationBetween](dateTime.md#getdurationbetween)
+- [durationBetween](dateTime.md#durationbetween)
 
 ## Functions
 
@@ -32,13 +36,13 @@
 
 #### Defined in
 
-[pure-immutable/date-time.ts:11](https://github.com/alpinisme/utils/blob/a9c02a4/src/pure-immutable/date-time.ts#L11)
+[src/pure-immutable/date-time.ts:61](https://github.com/alpinisme/utils/blob/42a5f03/src/pure-immutable/date-time.ts#L61)
 
 ___
 
-### getDurationBetween
+### durationBetween
 
-▸ **getDurationBetween**(`from`, `to`, `units`): `number`
+▸ **durationBetween**(`start`, `stop`, `units`): `number`
 
 Durations up to days supported.
 Beyond that, calendars become significant.
@@ -47,9 +51,9 @@ Beyond that, calendars become significant.
 
 | Name | Type |
 | :------ | :------ |
-| `from` | `Date` |
-| `to` | `Date` |
-| `units` | [`Duration`](../enums/dateTime.Duration.md) |
+| `start` | `Date` |
+| `stop` | `Date` |
+| `units` | [`DurationUnits`](../enums/dateTime.DurationUnits.md) |
 
 #### Returns
 
@@ -57,4 +61,4 @@ Beyond that, calendars become significant.
 
 #### Defined in
 
-[pure-immutable/date-time.ts:49](https://github.com/alpinisme/utils/blob/a9c02a4/src/pure-immutable/date-time.ts#L49)
+[src/pure-immutable/date-time.ts:91](https://github.com/alpinisme/utils/blob/42a5f03/src/pure-immutable/date-time.ts#L91)

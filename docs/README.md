@@ -2,16 +2,18 @@ utils / [Exports](modules.md)
 
 # A Library of Utility Functions
 
-Functions can be imported either directly or qualified by scope, so both of the following work:
+Functions can be imported either directly from subdirectory or qualified by scope, so both of the following work:
 
 ```ts
 import { arr } from 'utils';
 
-arr.unique([1, 2, 2, 1, 4, 1, 9]); // [1, 2, 4, 9]
+arr.uniques([1, 2, 2, 1, 4, 1, 9]); // [1, 2, 4, 9]
 ```
 
 ```ts
-import { unique } from 'utils';
+import { uniques } from 'utils/pure-immutable';
 
-unique([1, 2, 2, 1, 4, 1, 9]); // [1, 2, 4, 9]
+uniques([1, 2, 2, 1, 4, 1, 9]); // [1, 2, 4, 9]
 ```
+
+Check out the docs directory for auto generated documentation for all exports.
