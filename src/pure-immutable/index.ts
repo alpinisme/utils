@@ -1,22 +1,14 @@
-import * as arr from './array';
-
-import * as base from './base';
-import * as dateTime from './date-time';
-import * as fn from './function';
-import * as num from './number';
-import * as str from './string';
-
-export default {
-  num,
-  ...num,
-  dateTime,
-  ...dateTime,
-  str,
-  ...str,
-  base,
-  ...base,
-  fn,
-  ...fn,
-  arr,
-  ...arr,
-};
+export * from './array';
+export * as arr from './array';
+export * from './base';
+export * as base from './base';
+export * from './date-time';
+export * as dateTime from './date-time';
+export * from './function';
+export * as fn from './function';
+export * from './number';
+export * as num from './number';
+export * from './object';
+export * as obj from './object';
+export * from './string';
+export * as str from './string';

@@ -1,22 +1,27 @@
 import { describe, expect, test } from 'vitest';
 import {
+  countBy,
   duplicates,
+  duplicatesBy,
+  findMatches,
+  groupBy,
   insertNth,
   removeNth,
   sortByNumber,
   sortByString,
   take,
+  uniques,
   updateNth,
 } from './array';
 
-describe('sorting, finding duplicates, and finding uniques', () => {
-  const people = () => [
-    { name: 'Matthew', age: 24 },
-    { name: 'Matt', age: 35 },
-    { name: 'Jo', age: 14 },
-    { name: 'Matthew', age: 14 },
-  ];
+const people = () => [
+  { name: 'Matthew', age: 24 },
+  { name: 'Matt', age: 35 },
+  { name: 'Jo', age: 14 },
+  { name: 'Matthew', age: 14 },
+];
 
+describe('sorting', () => {
   const expectedSortedByAge = [
     { name: 'Jo', age: 14 },
     { name: 'Matthew', age: 14 },
@@ -53,25 +58,6 @@ describe('sorting, finding duplicates, and finding uniques', () => {
     expect(sortedByAgeRev.map((p) => p.age)).toEqual(
       expectedSortedByAge.reverse().map((p) => p.age),
     );
-  });
-
-  test('finding duplicate primitives', () => {
-    const dupes = duplicates([1, 2, 2, 3, 4, 1, 2]);
-    expect(dupes.map((d) => d.value)).toEqual([1, 2]);
-  });
-
-  test('finding objects with duplicate keys', () => {
-    const dupes = duplicates(people(), (p) => p.name);
-    expect(dupes.map((d) => d.value)).toEqual(['Matthew']);
-  });
-
-  test('including raw matches when reporting duplicates', () => {
-    const dupes = duplicates(people(), (p) => p.name);
-    expect(dupes).toHaveLength(1);
-    expect(dupes[0].matches).toEqual([
-      { name: 'Matthew', age: 24 },
-      { name: 'Matthew', age: 14 },
-    ]);
   });
 });
 
@@ -112,5 +98,53 @@ describe('array manipulation', () => {
 
   test('updating item at Nth index', () => {
     expect(updateNth(arr, 0, (x) => x + 1)).toEqual([2, 2, 3, 4, 5, 6, 7]);
+  });
+});
+
+describe('collections: grouping, counting, etc.', () => {
+  const arr = [{ who: 'Me' }, { who: 'Me' }, { who: 'You' }];
+  const accessor = (p) => p.who;
+
+  test('grouping by accessor', () => {
+    expect(groupBy(arr, accessor)).toEqual({
+      Me: [{ who: 'Me' }, { who: 'Me' }],
+      You: [{ who: 'You' }],
+    });
+  });
+
+  test('counting by accessor', () => {
+    expect(countBy(arr, accessor)).toEqual({
+      Me: 2,
+      You: 1,
+    });
+  });
+
+  test('finding unique primitives', () => {
+    const u = uniques([1, 2, 2, 3, 4, 1, 2]);
+    expect(u).toEqual([1, 2, 3, 4]);
+  });
+
+  test('finding duplicate primitives', () => {
+    const dupes = duplicates([1, 2, 2, 3, 4, 1, 2]);
+    expect(dupes).toEqual([1, 2]);
+  });
+
+  test('finding objects with duplicate keys', () => {
+    const dupes = duplicatesBy(people(), (p) => p.name);
+    expect(dupes.map((d) => d.value)).toEqual(['Matthew']);
+  });
+
+  test('including raw matches when reporting duplicates', () => {
+    const dupes = duplicatesBy(people(), (p) => p.name);
+    expect(dupes).toHaveLength(1);
+    expect(dupes[0].matches).toEqual([
+      { name: 'Matthew', age: 24 },
+      { name: 'Matthew', age: 14 },
+    ]);
+  });
+
+  test('find matches', () => {
+    const testArr = [{ who: 'Me' }, { who: 'Me' }, { who: 'You', yes: 'You' }];
+    expect(findMatches(testArr, { yes: 'You' })).toEqual([{ who: 'You', yes: 'You' }]);
   });
 });

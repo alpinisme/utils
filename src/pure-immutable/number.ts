@@ -22,6 +22,24 @@ export function getBounds(values: number[]) {
   );
 }
 
+/**
+ * Finds the min and max of the given array, using the accessor.
+ */
+export function getBoundsBy<T>(values: T[], accessor: (item: T) => number) {
+  return values
+    .filter((item) => !isNaN(accessor(item)))
+    .reduce(
+      (bounds, next) => {
+        // next must be the falsy result, otherwise initial NaN will win
+        const val = accessor(next);
+        bounds.min = val > bounds.min ? bounds.min : val;
+        bounds.max = val < bounds.max ? bounds.max : val;
+        return bounds;
+      },
+      { min: NaN, max: NaN },
+    );
+}
+
 export function numsFromTo(lowerBound: number, upperBound: number, step = 1) {
   const result: number[] = [];
   if (upperBound - lowerBound < 1) return result;
@@ -35,8 +53,6 @@ export function numsFromTo(lowerBound: number, upperBound: number, step = 1) {
 export function numsTo(upperBound: number, step = 1) {
   return numsFromTo(0, upperBound, step);
 }
-
-console.log(numsTo(10), numsFromTo(10, 100, 10));
 
 export function sumBy<T>(items: T[], accessor: (item: T) => number) {
   return items.reduce((sum, next) => sum + accessor(next), 0);
@@ -53,8 +69,11 @@ export function avg(arr: number[]) {
   return avgBy(arr, identity);
 }
 
-// arguably, this should return the actual item -- but it's not clear that there will only be one item!
-// so I'm inclined to say you should use this, then filter on the original array based on which match this
+/**
+ * Gives the minimum value, given the accessor (not the object that
+ * contains the value, since there may be more than one).
+ * To access the matching objects themselves, use findMatches
+ */
 export function minBy<T>(arr: T[], accessor: (n: T) => number) {
   return Math.min(...arr.map(accessor));
 }
@@ -70,8 +89,6 @@ export function maxBy<T>(arr: T[], accessor: (n: T) => number) {
 export function max(arr: number[]) {
   return Math.max(...arr);
 }
-
-// console.log(getBounds([1, 2, 18, 3, 4, 5]), getBounds([]), getBounds([1]), getBounds([1, NaN]));
 
 export function getRange(values: number[]) {
   const bounds = getBounds(values);
