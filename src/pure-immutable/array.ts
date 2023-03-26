@@ -12,7 +12,7 @@ export function uniquesBy<T, Key>(arr: T[], accessor: (item: T) => Key) {
 
 export function uniques<T>(values: T[]): T[] {
   const set = values.reduce((set, value) => set.add(value), new Set<T>());
-  return toArray(set.values());
+  return toArray(set);
 }
 
 export function sortByString<T>(
@@ -90,7 +90,7 @@ export function duplicatesBy<T, U extends (item: T) => any>(
       map.set(key, [val]);
     }
   });
-  return toArray(map.entries())
+  return toArray(map)
     .filter((entry) => entry[1].length > 1)
     .map((entry) => ({ value: entry[0], matches: entry[1] }));
 }

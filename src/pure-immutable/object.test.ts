@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'vitest';
-import { omit, pick } from './object';
+import { isMatch, omit, pick } from './object';
 
 describe('picking and omitting', () => {
   test('pick includes specified keys and excludes others', () => {
@@ -16,5 +16,15 @@ describe('picking and omitting', () => {
 
   test('omit works with number keys too', () => {
     expect(omit(['hello', 0], { 0: 1, hello: 'there' })).toEqual({});
+  });
+});
+
+describe('match testing', () => {
+  test('isMatch finds matches', () => {
+    expect(isMatch({ yes: 'no', huh: 'cool' }, { yes: 'no' })).toBe(true);
+  });
+
+  test('isMatch rejects nonmatches', () => {
+    expect(isMatch({ yes: 'no', huh: 'cool' }, { yes: 'yes' })).toBe(false);
   });
 });

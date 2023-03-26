@@ -16,6 +16,8 @@ describe('wrapping function', () => {
   test('wrapping should not require both before and after', () => {
     const inc = (x: number) => x + 1;
     expect(wrap(inc, { after: inc })(1)).toBe(3);
+    expect(wrap(inc, { before: inc })(1)).toBe(3);
+    expect(wrap(inc, {})(1)).toBe(2); // technically allowed, maybe shouldn't be
   });
 });
 
