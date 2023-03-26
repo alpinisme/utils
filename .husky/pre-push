@@ -16,8 +16,9 @@ fi
 
 git add -A
 
-git commit -m "docs: auto-update"
+git commit -m "docs: auto-update" --no-verify
 
-echo "Docs required updating but are now up to date. Try again."
+color="\033[1;35m"
+echo "$color\n\nDOCS REQUIRED UPDATING BUT ARE NOW UP TO DATE. TRY AGAIN.\n\n"
 
 exit 1
