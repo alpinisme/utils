@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+yarn generate:docs
+
+git add -A
+git commit -m "docs: auto-update"
