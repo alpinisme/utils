@@ -1,6 +1,22 @@
 import { describe, expect, test } from 'vitest';
 import { identity } from './base';
-import { getBounds, getBoundsBy, numsFromTo, numsTo } from './number';
+import {
+  avg,
+  avgBy,
+  clamp,
+  getBounds,
+  getBoundsBy,
+  getRange,
+  inRange,
+  max,
+  maxBy,
+  min,
+  minBy,
+  numsFromTo,
+  numsTo,
+  sum,
+  sumBy,
+} from './number';
 
 describe('bounds', () => {
   test('getBounds gets the min and max of array', () => {
@@ -55,5 +71,88 @@ describe('enumerating a range', () => {
 
   test('numsFromTo allows a starting offset', () => {
     expect(numsFromTo(10, 100, 10)).toEqual([10, 20, 30, 40, 50, 60, 70, 80, 90, 100]);
+  });
+
+  test('numsFromTo returns empty array if impossible request', () => {
+    expect(numsFromTo(100, 10)).toEqual([]);
+  });
+
+  test('numsFromTo just returns lower bound if step higher than distance to upper', () => {
+    expect(numsFromTo(10, 100, 100)).toEqual([10]);
+  });
+});
+
+describe('number manipulation', () => {
+  test('clamp returns the same number if in range', () => {
+    expect(clamp(1, { min: 0, max: 10 })).toBe(1);
+  });
+
+  test('clamp returns the min if value below range', () => {
+    expect(clamp(-1, { min: 0, max: 10 })).toBe(0);
+  });
+
+  test('clamp returns the max if value above range', () => {
+    expect(clamp(100, { min: 0, max: 10 })).toBe(10);
+  });
+
+  test('inRange checks if number between min and max', () => {
+    expect(inRange(10, { min: 0, max: 10 })).toBe(true);
+  });
+
+  test('inRange detects if number not between min and max', () => {
+    expect(inRange(11, { min: 0, max: 10 })).toBe(false);
+  });
+});
+
+describe('statistical summary', () => {
+  test('sum works', () => {
+    expect(sum(numsFromTo(9, 11))).toEqual(30);
+  });
+
+  test('sum gives 0 when empty array provided', () => {
+    expect(sum([])).toEqual(0);
+  });
+
+  test('sumBy works', () => {
+    expect(sumBy([{ n: 1 }, { n: 10 }, { n: 19 }], (d) => d.n)).toEqual(30);
+  });
+
+  test('average works', () => {
+    expect(avg(numsTo(10))).toEqual(5);
+  });
+
+  test('average returns NaN when no data provided', () => {
+    expect(avg([])).toEqual(NaN);
+  });
+
+  test('averageBy works', () => {
+    expect(avgBy([{ n: 1 }, { n: 10 }, { n: 19 }], (d) => d.n)).toEqual(10);
+  });
+
+  test('max gives the highest value in array', () => {
+    expect(max(numsTo(10))).toBe(10);
+  });
+
+  test('maxBy gives the highest value in array given the accessor', () => {
+    expect(maxBy([{ n: 1 }, { n: 21 }, { n: 19 }], (d) => d.n)).toBe(21);
+  });
+
+  test('min gives the lowest value in array', () => {
+    expect(min(numsTo(10))).toBe(0);
+  });
+
+  test('minBy gives the lowest value in array given the accessor', () => {
+    expect(minBy([{ n: 1 }, { n: 10 }, { n: 19 }], (d) => d.n)).toBe(1);
+  });
+
+  test('max gives -Infinity if given empty array', () => {
+    // this is the default js behavior of Math.max and I don't see any sane way to alter it,
+    // except the equally awkward NaN and the worse undefined -- using a Maybe type could work
+    // but it would break the pattern -- maybe later I'll add a safeMax etc.
+    expect(max([])).toBe(-Infinity);
+  });
+
+  test('getRange returns range between min and max', () => {
+    expect(getRange([-1, 4, 2])).toBe(5);
   });
 });

@@ -57,6 +57,7 @@ export function numsTo(upperBound: number, step = 1) {
 export function sumBy<T>(items: T[], accessor: (item: T) => number) {
   return items.reduce((sum, next) => sum + accessor(next), 0);
 }
+
 export function sum(nums: number[]) {
   return sumBy(nums, identity);
 }
@@ -83,7 +84,7 @@ export function min(arr: number[]) {
 }
 
 export function maxBy<T>(arr: T[], accessor: (n: T) => number) {
-  return Math.min(...arr.map(accessor));
+  return Math.max(...arr.map(accessor));
 }
 
 export function max(arr: number[]) {
@@ -96,7 +97,7 @@ export function getRange(values: number[]) {
 }
 
 export function clamp(value: number, bounds: { min: number; max: number }) {
-  if (bounds.max > value) return bounds.max;
-  if (bounds.min < value) return bounds.min;
+  if (bounds.max < value) return bounds.max;
+  if (bounds.min > value) return bounds.min;
   return value;
 }
