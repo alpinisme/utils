@@ -13,3 +13,5 @@ import { unique } from 'utils';
 
 unique([1, 2, 2, 1, 4, 1, 9]); // [1, 2, 4, 9]
 ```
+
+Check out the docs directory for auto generated documentation for all exports.
