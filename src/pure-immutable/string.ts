@@ -22,9 +22,9 @@ export function toSnakeCase(str: string) {
  * Capitalize each word (e.g., 'this string' -> 'This String')
  *
  */
-export function capitalize(str: string) {
+export function capitalize<T extends string>(str: T): Capitalize<T> {
   return str
     .split(/\s/)
     .map((word) => word.slice(0, 1).toUpperCase() + word.slice(1))
-    .join(' ');
+    .join(' ') as Capitalize<T>;
 }
