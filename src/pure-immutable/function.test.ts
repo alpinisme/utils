@@ -20,6 +20,7 @@ describe('wrapping function', () => {
     expect(wrap(inc, {})(1)).toBe(2); // technically allowed, maybe shouldn't be
   });
 });
+// ts
 
 describe('arity, argument ordering, and partial application', () => {
   test('flipping arguments works', () => {

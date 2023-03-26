@@ -4,3 +4,18 @@
 yarn test
 
 yarn typecheck
+
+if git status | grep -q "\.ts"; then
+    
+    color="\033[1;35m"
+    echo "$color\n\nDocs required updating. Please wait while they update.\n\n"
+
+    yarn generate:docs
+
+    git add -A
+
+    echo "$color\n\nDocs successfully updated and added to this commit..\n\n"
+
+fi
+
+  

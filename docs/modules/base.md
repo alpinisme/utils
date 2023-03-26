@@ -34,7 +34,7 @@
 
 #### Defined in
 
-[src/pure-immutable/base.ts:1](https://github.com/alpinisme/utils/blob/a680e5d/src/pure-immutable/base.ts#L1)
+[src/pure-immutable/base.ts:1](https://github.com/alpinisme/utils/blob/a3a7f70/src/pure-immutable/base.ts#L1)
 
 ___
 
@@ -54,7 +54,7 @@ err is Error
 
 #### Defined in
 
-[src/pure-immutable/base.ts:5](https://github.com/alpinisme/utils/blob/a680e5d/src/pure-immutable/base.ts#L5)
+[src/pure-immutable/base.ts:5](https://github.com/alpinisme/utils/blob/a3a7f70/src/pure-immutable/base.ts#L5)
 
 ___
 
@@ -80,4 +80,4 @@ ___
 
 #### Defined in
 
-[src/pure-immutable/base.ts:9](https://github.com/alpinisme/utils/blob/a680e5d/src/pure-immutable/base.ts#L9)
+[src/pure-immutable/base.ts:9](https://github.com/alpinisme/utils/blob/a3a7f70/src/pure-immutable/base.ts#L9)

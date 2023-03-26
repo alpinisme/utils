@@ -49,7 +49,7 @@
 
 #### Defined in
 
-[src/pure-immutable/function.ts:18](https://github.com/alpinisme/utils/blob/a680e5d/src/pure-immutable/function.ts#L18)
+[src/pure-immutable/function.ts:18](https://github.com/alpinisme/utils/blob/a3a7f70/src/pure-immutable/function.ts#L18)
 
 ___
 
@@ -76,7 +76,7 @@ ___
 
 #### Defined in
 
-[src/pure-immutable/function.ts:1](https://github.com/alpinisme/utils/blob/a680e5d/src/pure-immutable/function.ts#L1)
+[src/pure-immutable/function.ts:1](https://github.com/alpinisme/utils/blob/a3a7f70/src/pure-immutable/function.ts#L1)
 
 ___
 
@@ -121,4 +121,4 @@ helper to transform inputs and outputs to a function (without changing their typ
 
 #### Defined in
 
-[src/pure-immutable/function.ts:26](https://github.com/alpinisme/utils/blob/a680e5d/src/pure-immutable/function.ts#L26)
+[src/pure-immutable/function.ts:26](https://github.com/alpinisme/utils/blob/a3a7f70/src/pure-immutable/function.ts#L26)
