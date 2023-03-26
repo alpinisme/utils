@@ -1,7 +1,23 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
+
+
+initial_status=$(git status)
+
 yarn generate:docs
 
+final_status=$(git status)
+
+if [ "$initial_status" == "$final_status" ]
+then
+    exit 0
+fi
+
 git add -A
+
 git commit -m "docs: auto-update"
+
+echo "Docs required updating but are now up to date. Try again."
+
+exit 1
