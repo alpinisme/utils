@@ -5,7 +5,7 @@ export function safeInvoke<Fn extends (...args: any[]) => any>(
   try {
     return {
       success: true,
-      result: fn(args),
+      result: fn(...args),
     };
   } catch (e) {
     return {
@@ -44,3 +44,5 @@ export function wrap<T, U>(
     return fn(input);
   };
 }
+
+// TODO: partial application would be nice
