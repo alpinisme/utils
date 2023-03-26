@@ -36,7 +36,7 @@
 
 #### Defined in
 
-[src/pure-immutable/date-time.ts:61](https://github.com/alpinisme/utils/blob/42a5f03/src/pure-immutable/date-time.ts#L61)
+[src/pure-immutable/date-time.ts:61](https://github.com/alpinisme/utils/blob/a680e5d/src/pure-immutable/date-time.ts#L61)
 
 ___
 
@@ -61,4 +61,4 @@ Beyond that, calendars become significant.
 
 #### Defined in
 
-[src/pure-immutable/date-time.ts:91](https://github.com/alpinisme/utils/blob/42a5f03/src/pure-immutable/date-time.ts#L91)
+[src/pure-immutable/date-time.ts:91](https://github.com/alpinisme/utils/blob/a680e5d/src/pure-immutable/date-time.ts#L91)
