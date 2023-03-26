@@ -101,3 +101,21 @@ export function clamp(value: number, bounds: { min: number; max: number }) {
   if (bounds.min > value) return bounds.min;
   return value;
 }
+
+export function variance(values: number[]) {
+  return avg(deviations(values).map((x) => x * x));
+}
+
+export function stdDev(values: number[]): number {
+  return Math.sqrt(variance(values));
+}
+
+export function deviations(values: number[]): number[] {
+  const average = avg(values);
+  return values.map((x) => x - average);
+}
+
+export function pctDev(values: number[]): number[] {
+  const average = avg(values);
+  return deviations(values).map((x) => Math.abs(100 * (x / average)));
+}

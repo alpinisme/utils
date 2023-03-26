@@ -4,6 +4,7 @@ import {
   avg,
   avgBy,
   clamp,
+  deviations,
   getBounds,
   getBoundsBy,
   getRange,
@@ -14,8 +15,11 @@ import {
   minBy,
   numsFromTo,
   numsTo,
+  pctDev as pctDevMap,
+  stdDev,
   sum,
   sumBy,
+  variance,
 } from './number';
 
 describe('bounds', () => {
@@ -154,5 +158,28 @@ describe('statistical summary', () => {
 
   test('getRange returns range between min and max', () => {
     expect(getRange([-1, 4, 2])).toBe(5);
+  });
+
+  test('deviation map', () => {
+    expect(deviations([10, 12, 23, 23, 16, 23, 21, 16])).toEqual([-8, -6, 5, 5, -2, 5, 3, -2]);
+  });
+
+  test('variance', () => {
+    expect(variance([10, 12, 23, 23, 16, 23, 21, 16])).toBe(24);
+  });
+
+  test('standard deviation', () => {
+    expect(stdDev([10, 12, 23, 23, 16, 23, 21, 16]).toFixed(10)).toBe(
+      (4.8989794855664).toFixed(10),
+    );
+  });
+
+  test('percent deviation map', () => {
+    expect(pctDevMap([10, 12, 23, 23, 16, 23, 21, 16]).map((x) => x.toFixed(10))).toEqual(
+      [
+        44.44444444444444, 33.33333333333333, 27.77777777777778, 27.77777777777778,
+        11.11111111111111, 27.77777777777778, 16.666666666666664, 11.11111111111111,
+      ].map((x) => x.toFixed(10)),
+    );
   });
 });
