@@ -95,3 +95,10 @@ export function durationBetween(start: Date, stop: Date, units: DurationUnits) {
 
   return DurationMS[method](durationInMS);
 }
+
+/**
+ * Checks if date object contains a valid date
+ */
+export const isValidDate = (date: Date): boolean => {
+  return !isNaN(date.getTime());
+};

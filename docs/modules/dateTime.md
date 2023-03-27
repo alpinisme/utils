@@ -16,6 +16,7 @@
 
 - [addDuration](dateTime.md#addduration)
 - [durationBetween](dateTime.md#durationbetween)
+- [isValidDate](dateTime.md#isvaliddate)
 
 ## Functions
 
@@ -36,7 +37,7 @@
 
 #### Defined in
 
-[src/pure-immutable/date-time.ts:61](https://github.com/alpinisme/utils/blob/a3a7f70/src/pure-immutable/date-time.ts#L61)
+[src/pure-immutable/date-time.ts:61](https://github.com/alpinisme/utils/blob/ce14fad/src/pure-immutable/date-time.ts#L61)
 
 ___
 
@@ -61,4 +62,26 @@ Beyond that, calendars become significant.
 
 #### Defined in
 
-[src/pure-immutable/date-time.ts:91](https://github.com/alpinisme/utils/blob/a3a7f70/src/pure-immutable/date-time.ts#L91)
+[src/pure-immutable/date-time.ts:91](https://github.com/alpinisme/utils/blob/ce14fad/src/pure-immutable/date-time.ts#L91)
+
+___
+
+### isValidDate
+
+▸ **isValidDate**(`date`): `boolean`
+
+Checks if date object contains a valid date
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `date` | `Date` |
+
+#### Returns
+
+`boolean`
+
+#### Defined in
+
+[src/pure-immutable/date-time.ts:102](https://github.com/alpinisme/utils/blob/ce14fad/src/pure-immutable/date-time.ts#L102)
