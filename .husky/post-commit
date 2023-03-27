@@ -1,0 +1,15 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+if git diff-tree --no-commit-id --name-only HEAD -r  | grep -q "[^test]\.ts"; then
+    
+    color="\033[1;35m"
+    read -p "$color\n\nDocs require updating. Should I update them and commit? (y/n)" SHOULD_CONTINUE
+
+    if [ $SHOULD_CONTINUE == 'yes' ]; then 
+        yarn generate:docs
+        git add docs
+        git commit -m "docs: auto update"
+        echo "$color\\nnDocs successfully updated\n\n"
+    fi
+fi
