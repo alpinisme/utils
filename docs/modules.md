@@ -6,12 +6,14 @@
 
 ### Namespaces
 
-- [arr](modules/arr.md)
+- [array](modules/array.md)
 - [base](modules/base.md)
-- [dateTime](modules/dateTime.md)
-- [fn](modules/fn.md)
+- [date](modules/date.md)
+- [func](modules/func.md)
 - [http](modules/http.md)
 - [io](modules/io.md)
-- [num](modules/num.md)
-- [obj](modules/obj.md)
-- [str](modules/str.md)
+- [number](modules/number.md)
+- [object](modules/object.md)
+- [random](modules/random.md)
+- [string](modules/string.md)
+- [timing](modules/timing.md)

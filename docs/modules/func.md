@@ -1,14 +1,14 @@
-[utils](../README.md) / [Exports](../modules.md) / fn
+[utils](../README.md) / [Exports](../modules.md) / func
 
-# Namespace: fn
+# Namespace: func
 
 ## Table of contents
 
 ### Functions
 
-- [flipArgs](fn.md#flipargs)
-- [safeInvoke](fn.md#safeinvoke)
-- [wrap](fn.md#wrap)
+- [flipArgs](func.md#flipargs)
+- [safeInvoke](func.md#safeinvoke)
+- [wrap](func.md#wrap)
 
 ## Functions
 
@@ -49,7 +49,7 @@
 
 #### Defined in
 
-[src/pure-immutable/function.ts:18](https://github.com/alpinisme/utils/blob/ce14fad/src/pure-immutable/function.ts#L18)
+[src/pure-immutable/function.ts:18](https://github.com/alpinisme/utils/blob/e71e104/src/pure-immutable/function.ts#L18)
 
 ___
 
@@ -76,7 +76,7 @@ ___
 
 #### Defined in
 
-[src/pure-immutable/function.ts:1](https://github.com/alpinisme/utils/blob/ce14fad/src/pure-immutable/function.ts#L1)
+[src/pure-immutable/function.ts:1](https://github.com/alpinisme/utils/blob/e71e104/src/pure-immutable/function.ts#L1)
 
 ___
 
@@ -121,4 +121,4 @@ helper to transform inputs and outputs to a function (without changing their typ
 
 #### Defined in
 
-[src/pure-immutable/function.ts:26](https://github.com/alpinisme/utils/blob/ce14fad/src/pure-immutable/function.ts#L26)
+[src/pure-immutable/function.ts:26](https://github.com/alpinisme/utils/blob/e71e104/src/pure-immutable/function.ts#L26)

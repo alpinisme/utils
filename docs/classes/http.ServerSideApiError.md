@@ -52,7 +52,7 @@ represents 500-series http responses
 
 #### Defined in
 
-[src/mutable/http.ts:138](https://github.com/alpinisme/utils/blob/ce14fad/src/mutable/http.ts#L138)
+[src/mutable/http.ts:138](https://github.com/alpinisme/utils/blob/e71e104/src/mutable/http.ts#L138)
 
 ## Properties
 
@@ -108,7 +108,7 @@ ___
 
 #### Defined in
 
-[src/mutable/http.ts:116](https://github.com/alpinisme/utils/blob/ce14fad/src/mutable/http.ts#L116)
+[src/mutable/http.ts:116](https://github.com/alpinisme/utils/blob/e71e104/src/mutable/http.ts#L116)
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-[src/mutable/http.ts:118](https://github.com/alpinisme/utils/blob/ce14fad/src/mutable/http.ts#L118)
+[src/mutable/http.ts:118](https://github.com/alpinisme/utils/blob/e71e104/src/mutable/http.ts#L118)
 
 ___
 
@@ -150,7 +150,7 @@ ___
 
 #### Defined in
 
-[src/mutable/http.ts:117](https://github.com/alpinisme/utils/blob/ce14fad/src/mutable/http.ts#L117)
+[src/mutable/http.ts:117](https://github.com/alpinisme/utils/blob/e71e104/src/mutable/http.ts#L117)
 
 ___
 

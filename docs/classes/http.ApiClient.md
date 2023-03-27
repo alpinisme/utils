@@ -45,7 +45,7 @@ Includes optional retry logic, auth token injection, and error handling
 
 #### Defined in
 
-[src/mutable/http.ts:26](https://github.com/alpinisme/utils/blob/ce14fad/src/mutable/http.ts#L26)
+[src/mutable/http.ts:26](https://github.com/alpinisme/utils/blob/e71e104/src/mutable/http.ts#L26)
 
 ## Properties
 
@@ -55,7 +55,7 @@ Includes optional retry logic, auth token injection, and error handling
 
 #### Defined in
 
-[src/mutable/http.ts:20](https://github.com/alpinisme/utils/blob/ce14fad/src/mutable/http.ts#L20)
+[src/mutable/http.ts:20](https://github.com/alpinisme/utils/blob/e71e104/src/mutable/http.ts#L20)
 
 ___
 
@@ -65,7 +65,7 @@ ___
 
 #### Defined in
 
-[src/mutable/http.ts:22](https://github.com/alpinisme/utils/blob/ce14fad/src/mutable/http.ts#L22)
+[src/mutable/http.ts:22](https://github.com/alpinisme/utils/blob/e71e104/src/mutable/http.ts#L22)
 
 ___
 
@@ -75,7 +75,7 @@ ___
 
 #### Defined in
 
-[src/mutable/http.ts:18](https://github.com/alpinisme/utils/blob/ce14fad/src/mutable/http.ts#L18)
+[src/mutable/http.ts:18](https://github.com/alpinisme/utils/blob/e71e104/src/mutable/http.ts#L18)
 
 ___
 
@@ -85,7 +85,7 @@ ___
 
 #### Defined in
 
-[src/mutable/http.ts:19](https://github.com/alpinisme/utils/blob/ce14fad/src/mutable/http.ts#L19)
+[src/mutable/http.ts:19](https://github.com/alpinisme/utils/blob/e71e104/src/mutable/http.ts#L19)
 
 ## Methods
 
@@ -117,7 +117,7 @@ get('/account/123/')
 
 #### Defined in
 
-[src/mutable/http.ts:74](https://github.com/alpinisme/utils/blob/ce14fad/src/mutable/http.ts#L74)
+[src/mutable/http.ts:74](https://github.com/alpinisme/utils/blob/e71e104/src/mutable/http.ts#L74)
 
 ___
 
@@ -149,7 +149,7 @@ get('/account/1234')
 
 #### Defined in
 
-[src/mutable/http.ts:44](https://github.com/alpinisme/utils/blob/ce14fad/src/mutable/http.ts#L44)
+[src/mutable/http.ts:44](https://github.com/alpinisme/utils/blob/e71e104/src/mutable/http.ts#L44)
 
 ___
 
@@ -169,7 +169,7 @@ ___
 
 #### Defined in
 
-[src/mutable/http.ts:101](https://github.com/alpinisme/utils/blob/ce14fad/src/mutable/http.ts#L101)
+[src/mutable/http.ts:101](https://github.com/alpinisme/utils/blob/e71e104/src/mutable/http.ts#L101)
 
 ___
 
@@ -193,7 +193,7 @@ Make request and retry on 5xx errors up to `retries` times
 
 #### Defined in
 
-[src/mutable/http.ts:84](https://github.com/alpinisme/utils/blob/ce14fad/src/mutable/http.ts#L84)
+[src/mutable/http.ts:84](https://github.com/alpinisme/utils/blob/e71e104/src/mutable/http.ts#L84)
 
 ___
 
@@ -226,7 +226,7 @@ post('/account/1234', {username: 'pinocchio', dream: 'becoming a human boy'})
 
 #### Defined in
 
-[src/mutable/http.ts:54](https://github.com/alpinisme/utils/blob/ce14fad/src/mutable/http.ts#L54)
+[src/mutable/http.ts:54](https://github.com/alpinisme/utils/blob/e71e104/src/mutable/http.ts#L54)
 
 ___
 
@@ -259,7 +259,7 @@ put('/account/1234', {username: 'jeeves'})
 
 #### Defined in
 
-[src/mutable/http.ts:64](https://github.com/alpinisme/utils/blob/ce14fad/src/mutable/http.ts#L64)
+[src/mutable/http.ts:64](https://github.com/alpinisme/utils/blob/e71e104/src/mutable/http.ts#L64)
 
 ___
 
@@ -281,4 +281,4 @@ set the token used in the authorization header
 
 #### Defined in
 
-[src/mutable/http.ts:79](https://github.com/alpinisme/utils/blob/ce14fad/src/mutable/http.ts#L79)
+[src/mutable/http.ts:79](https://github.com/alpinisme/utils/blob/e71e104/src/mutable/http.ts#L79)

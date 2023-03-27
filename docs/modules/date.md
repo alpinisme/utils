@@ -1,22 +1,22 @@
-[utils](../README.md) / [Exports](../modules.md) / dateTime
+[utils](../README.md) / [Exports](../modules.md) / date
 
-# Namespace: dateTime
+# Namespace: date
 
 ## Table of contents
 
 ### Enumerations
 
-- [DurationUnits](../enums/dateTime.DurationUnits.md)
+- [DurationUnits](../enums/date.DurationUnits.md)
 
 ### Classes
 
-- [DurationMS](../classes/dateTime.DurationMS.md)
+- [DurationMS](../classes/date.DurationMS.md)
 
 ### Functions
 
-- [addDuration](dateTime.md#addduration)
-- [durationBetween](dateTime.md#durationbetween)
-- [isValidDate](dateTime.md#isvaliddate)
+- [addDuration](date.md#addduration)
+- [durationBetween](date.md#durationbetween)
+- [isValidDate](date.md#isvaliddate)
 
 ## Functions
 
@@ -37,7 +37,7 @@
 
 #### Defined in
 
-[src/pure-immutable/date-time.ts:61](https://github.com/alpinisme/utils/blob/ce14fad/src/pure-immutable/date-time.ts#L61)
+[src/pure-immutable/date-time.ts:61](https://github.com/alpinisme/utils/blob/e71e104/src/pure-immutable/date-time.ts#L61)
 
 ___
 
@@ -54,7 +54,7 @@ Beyond that, calendars become significant.
 | :------ | :------ |
 | `start` | `Date` |
 | `stop` | `Date` |
-| `units` | [`DurationUnits`](../enums/dateTime.DurationUnits.md) |
+| `units` | [`DurationUnits`](../enums/date.DurationUnits.md) |
 
 #### Returns
 
@@ -62,7 +62,7 @@ Beyond that, calendars become significant.
 
 #### Defined in
 
-[src/pure-immutable/date-time.ts:91](https://github.com/alpinisme/utils/blob/ce14fad/src/pure-immutable/date-time.ts#L91)
+[src/pure-immutable/date-time.ts:91](https://github.com/alpinisme/utils/blob/e71e104/src/pure-immutable/date-time.ts#L91)
 
 ___
 
@@ -84,4 +84,4 @@ Checks if date object contains a valid date
 
 #### Defined in
 
-[src/pure-immutable/date-time.ts:102](https://github.com/alpinisme/utils/blob/ce14fad/src/pure-immutable/date-time.ts#L102)
+[src/pure-immutable/date-time.ts:102](https://github.com/alpinisme/utils/blob/e71e104/src/pure-immutable/date-time.ts#L102)

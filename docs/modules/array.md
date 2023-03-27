@@ -1,31 +1,31 @@
-[utils](../README.md) / [Exports](../modules.md) / arr
+[utils](../README.md) / [Exports](../modules.md) / array
 
-# Namespace: arr
+# Namespace: array
 
 ## Table of contents
 
 ### Functions
 
-- [count](arr.md#count)
-- [countBy](arr.md#countby)
-- [duplicates](arr.md#duplicates)
-- [duplicatesBy](arr.md#duplicatesby)
-- [findAll](arr.md#findall)
-- [findMatches](arr.md#findmatches)
-- [groupBy](arr.md#groupby)
-- [insertNth](arr.md#insertnth)
-- [isEmpty](arr.md#isempty)
-- [isNonEmpty](arr.md#isnonempty)
-- [removeNth](arr.md#removenth)
-- [reverse](arr.md#reverse)
-- [sortByNumber](arr.md#sortbynumber)
-- [sortByString](arr.md#sortbystring)
-- [take](arr.md#take)
-- [takeRight](arr.md#takeright)
-- [toArray](arr.md#toarray)
-- [uniques](arr.md#uniques)
-- [uniquesBy](arr.md#uniquesby)
-- [updateNth](arr.md#updatenth)
+- [count](array.md#count)
+- [countBy](array.md#countby)
+- [duplicates](array.md#duplicates)
+- [duplicatesBy](array.md#duplicatesby)
+- [findAll](array.md#findall)
+- [findMatches](array.md#findmatches)
+- [groupBy](array.md#groupby)
+- [insertNth](array.md#insertnth)
+- [isEmpty](array.md#isempty)
+- [isNonEmpty](array.md#isnonempty)
+- [removeNth](array.md#removenth)
+- [reverse](array.md#reverse)
+- [sortByNumber](array.md#sortbynumber)
+- [sortByString](array.md#sortbystring)
+- [take](array.md#take)
+- [takeRight](array.md#takeright)
+- [toArray](array.md#toarray)
+- [uniques](array.md#uniques)
+- [uniquesBy](array.md#uniquesby)
+- [updateNth](array.md#updatenth)
 
 ## Functions
 
@@ -51,7 +51,7 @@
 
 #### Defined in
 
-[src/pure-immutable/array.ts:110](https://github.com/alpinisme/utils/blob/ce14fad/src/pure-immutable/array.ts#L110)
+[src/pure-immutable/array.ts:110](https://github.com/alpinisme/utils/blob/e71e104/src/pure-immutable/array.ts#L110)
 
 ___
 
@@ -79,7 +79,7 @@ ___
 
 #### Defined in
 
-[src/pure-immutable/array.ts:118](https://github.com/alpinisme/utils/blob/ce14fad/src/pure-immutable/array.ts#L118)
+[src/pure-immutable/array.ts:118](https://github.com/alpinisme/utils/blob/e71e104/src/pure-immutable/array.ts#L118)
 
 ___
 
@@ -105,7 +105,7 @@ ___
 
 #### Defined in
 
-[src/pure-immutable/array.ts:76](https://github.com/alpinisme/utils/blob/ce14fad/src/pure-immutable/array.ts#L76)
+[src/pure-immutable/array.ts:76](https://github.com/alpinisme/utils/blob/e71e104/src/pure-immutable/array.ts#L76)
 
 ___
 
@@ -133,7 +133,7 @@ ___
 
 #### Defined in
 
-[src/pure-immutable/array.ts:80](https://github.com/alpinisme/utils/blob/ce14fad/src/pure-immutable/array.ts#L80)
+[src/pure-immutable/array.ts:80](https://github.com/alpinisme/utils/blob/e71e104/src/pure-immutable/array.ts#L80)
 
 ___
 
@@ -162,7 +162,7 @@ ___
 
 #### Defined in
 
-[src/pure-immutable/array.ts:72](https://github.com/alpinisme/utils/blob/ce14fad/src/pure-immutable/array.ts#L72)
+[src/pure-immutable/array.ts:72](https://github.com/alpinisme/utils/blob/e71e104/src/pure-immutable/array.ts#L72)
 
 ___
 
@@ -189,7 +189,7 @@ ___
 
 #### Defined in
 
-[src/pure-immutable/array.ts:142](https://github.com/alpinisme/utils/blob/ce14fad/src/pure-immutable/array.ts#L142)
+[src/pure-immutable/array.ts:142](https://github.com/alpinisme/utils/blob/e71e104/src/pure-immutable/array.ts#L142)
 
 ___
 
@@ -217,7 +217,7 @@ ___
 
 #### Defined in
 
-[src/pure-immutable/array.ts:130](https://github.com/alpinisme/utils/blob/ce14fad/src/pure-immutable/array.ts#L130)
+[src/pure-immutable/array.ts:130](https://github.com/alpinisme/utils/blob/e71e104/src/pure-immutable/array.ts#L130)
 
 ___
 
@@ -245,7 +245,7 @@ ___
 
 #### Defined in
 
-[src/pure-immutable/array.ts:54](https://github.com/alpinisme/utils/blob/ce14fad/src/pure-immutable/array.ts#L54)
+[src/pure-immutable/array.ts:54](https://github.com/alpinisme/utils/blob/e71e104/src/pure-immutable/array.ts#L54)
 
 ___
 
@@ -271,7 +271,7 @@ ___
 
 #### Defined in
 
-[src/pure-immutable/array.ts:102](https://github.com/alpinisme/utils/blob/ce14fad/src/pure-immutable/array.ts#L102)
+[src/pure-immutable/array.ts:102](https://github.com/alpinisme/utils/blob/e71e104/src/pure-immutable/array.ts#L102)
 
 ___
 
@@ -297,7 +297,7 @@ ___
 
 #### Defined in
 
-[src/pure-immutable/array.ts:106](https://github.com/alpinisme/utils/blob/ce14fad/src/pure-immutable/array.ts#L106)
+[src/pure-immutable/array.ts:106](https://github.com/alpinisme/utils/blob/e71e104/src/pure-immutable/array.ts#L106)
 
 ___
 
@@ -324,7 +324,7 @@ ___
 
 #### Defined in
 
-[src/pure-immutable/array.ts:68](https://github.com/alpinisme/utils/blob/ce14fad/src/pure-immutable/array.ts#L68)
+[src/pure-immutable/array.ts:68](https://github.com/alpinisme/utils/blob/e71e104/src/pure-immutable/array.ts#L68)
 
 ___
 
@@ -350,7 +350,7 @@ ___
 
 #### Defined in
 
-[src/pure-immutable/array.ts:38](https://github.com/alpinisme/utils/blob/ce14fad/src/pure-immutable/array.ts#L38)
+[src/pure-immutable/array.ts:38](https://github.com/alpinisme/utils/blob/e71e104/src/pure-immutable/array.ts#L38)
 
 ___
 
@@ -378,7 +378,7 @@ ___
 
 #### Defined in
 
-[src/pure-immutable/array.ts:28](https://github.com/alpinisme/utils/blob/ce14fad/src/pure-immutable/array.ts#L28)
+[src/pure-immutable/array.ts:28](https://github.com/alpinisme/utils/blob/e71e104/src/pure-immutable/array.ts#L28)
 
 ___
 
@@ -406,7 +406,7 @@ ___
 
 #### Defined in
 
-[src/pure-immutable/array.ts:18](https://github.com/alpinisme/utils/blob/ce14fad/src/pure-immutable/array.ts#L18)
+[src/pure-immutable/array.ts:18](https://github.com/alpinisme/utils/blob/e71e104/src/pure-immutable/array.ts#L18)
 
 ___
 
@@ -433,7 +433,7 @@ ___
 
 #### Defined in
 
-[src/pure-immutable/array.ts:42](https://github.com/alpinisme/utils/blob/ce14fad/src/pure-immutable/array.ts#L42)
+[src/pure-immutable/array.ts:42](https://github.com/alpinisme/utils/blob/e71e104/src/pure-immutable/array.ts#L42)
 
 ___
 
@@ -460,7 +460,7 @@ ___
 
 #### Defined in
 
-[src/pure-immutable/array.ts:47](https://github.com/alpinisme/utils/blob/ce14fad/src/pure-immutable/array.ts#L47)
+[src/pure-immutable/array.ts:47](https://github.com/alpinisme/utils/blob/e71e104/src/pure-immutable/array.ts#L47)
 
 ___
 
@@ -486,7 +486,7 @@ ___
 
 #### Defined in
 
-[src/pure-immutable/array.ts:98](https://github.com/alpinisme/utils/blob/ce14fad/src/pure-immutable/array.ts#L98)
+[src/pure-immutable/array.ts:98](https://github.com/alpinisme/utils/blob/e71e104/src/pure-immutable/array.ts#L98)
 
 ___
 
@@ -512,7 +512,7 @@ ___
 
 #### Defined in
 
-[src/pure-immutable/array.ts:13](https://github.com/alpinisme/utils/blob/ce14fad/src/pure-immutable/array.ts#L13)
+[src/pure-immutable/array.ts:13](https://github.com/alpinisme/utils/blob/e71e104/src/pure-immutable/array.ts#L13)
 
 ___
 
@@ -542,7 +542,7 @@ take first of each unique value, given the accessor function
 
 #### Defined in
 
-[src/pure-immutable/array.ts:7](https://github.com/alpinisme/utils/blob/ce14fad/src/pure-immutable/array.ts#L7)
+[src/pure-immutable/array.ts:7](https://github.com/alpinisme/utils/blob/e71e104/src/pure-immutable/array.ts#L7)
 
 ___
 
@@ -570,4 +570,4 @@ ___
 
 #### Defined in
 
-[src/pure-immutable/array.ts:60](https://github.com/alpinisme/utils/blob/ce14fad/src/pure-immutable/array.ts#L60)
+[src/pure-immutable/array.ts:60](https://github.com/alpinisme/utils/blob/e71e104/src/pure-immutable/array.ts#L60)

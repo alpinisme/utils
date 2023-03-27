@@ -1,15 +1,15 @@
-[utils](../README.md) / [Exports](../modules.md) / obj
+[utils](../README.md) / [Exports](../modules.md) / object
 
-# Namespace: obj
+# Namespace: object
 
 ## Table of contents
 
 ### Functions
 
-- [createMatcher](obj.md#creatematcher)
-- [isMatch](obj.md#ismatch)
-- [omit](obj.md#omit)
-- [pick](obj.md#pick)
+- [createMatcher](object.md#creatematcher)
+- [isMatch](object.md#ismatch)
+- [omit](object.md#omit)
+- [pick](object.md#pick)
 
 ## Functions
 
@@ -47,7 +47,7 @@
 
 #### Defined in
 
-[src/pure-immutable/object.ts:12](https://github.com/alpinisme/utils/blob/ce14fad/src/pure-immutable/object.ts#L12)
+[src/pure-immutable/object.ts:12](https://github.com/alpinisme/utils/blob/e71e104/src/pure-immutable/object.ts#L12)
 
 ___
 
@@ -74,7 +74,7 @@ ___
 
 #### Defined in
 
-[src/pure-immutable/object.ts:5](https://github.com/alpinisme/utils/blob/ce14fad/src/pure-immutable/object.ts#L5)
+[src/pure-immutable/object.ts:5](https://github.com/alpinisme/utils/blob/e71e104/src/pure-immutable/object.ts#L5)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-[src/pure-immutable/object.ts:28](https://github.com/alpinisme/utils/blob/ce14fad/src/pure-immutable/object.ts#L28)
+[src/pure-immutable/object.ts:28](https://github.com/alpinisme/utils/blob/e71e104/src/pure-immutable/object.ts#L28)
 
 ___
 
@@ -130,4 +130,4 @@ ___
 
 #### Defined in
 
-[src/pure-immutable/object.ts:18](https://github.com/alpinisme/utils/blob/ce14fad/src/pure-immutable/object.ts#L18)
+[src/pure-immutable/object.ts:18](https://github.com/alpinisme/utils/blob/e71e104/src/pure-immutable/object.ts#L18)

@@ -1,14 +1,14 @@
-[utils](../README.md) / [Exports](../modules.md) / str
+[utils](../README.md) / [Exports](../modules.md) / string
 
-# Namespace: str
+# Namespace: string
 
 ## Table of contents
 
 ### Functions
 
-- [capitalize](str.md#capitalize)
-- [toPascalCase](str.md#topascalcase)
-- [toSnakeCase](str.md#tosnakecase)
+- [capitalize](string.md#capitalize)
+- [toPascalCase](string.md#topascalcase)
+- [toSnakeCase](string.md#tosnakecase)
 
 ## Functions
 
@@ -36,7 +36,7 @@ Capitalize each word (e.g., 'this string' -> 'This String')
 
 #### Defined in
 
-[src/pure-immutable/string.ts:25](https://github.com/alpinisme/utils/blob/ce14fad/src/pure-immutable/string.ts#L25)
+[src/pure-immutable/string.ts:25](https://github.com/alpinisme/utils/blob/e71e104/src/pure-immutable/string.ts#L25)
 
 ___
 
@@ -65,7 +65,7 @@ toPascalCase("My friend\n the     1st sharK") // -> MY_FRIEND_THE_1ST_SHARK
 
 #### Defined in
 
-[src/pure-immutable/string.ts:7](https://github.com/alpinisme/utils/blob/ce14fad/src/pure-immutable/string.ts#L7)
+[src/pure-immutable/string.ts:7](https://github.com/alpinisme/utils/blob/e71e104/src/pure-immutable/string.ts#L7)
 
 ___
 
@@ -94,4 +94,4 @@ toPascalCase("My friend\n the     1st sharK") // -> my_friend_the_1st_shark
 
 #### Defined in
 
-[src/pure-immutable/string.ts:17](https://github.com/alpinisme/utils/blob/ce14fad/src/pure-immutable/string.ts#L17)
+[src/pure-immutable/string.ts:17](https://github.com/alpinisme/utils/blob/e71e104/src/pure-immutable/string.ts#L17)

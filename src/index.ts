@@ -1,3 +1,3 @@
-export { io } from './impure-immutable';
+export { io, random, timing } from './impure-immutable';
 export { http } from './mutable';
-export { arr, base, dateTime, fn, num, obj, str } from './pure-immutable';
+export { array, base, date, func, number, object, string } from './pure-immutable';
