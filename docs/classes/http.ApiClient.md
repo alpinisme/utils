@@ -39,13 +39,13 @@ Includes optional retry logic, auth token injection, and error handling
 
 #### Parameters
 
-| Name    | Type               |
-| :------ | :----------------- |
+| Name | Type |
+| :------ | :------ |
 | `props` | `ConstructorProps` |
 
 #### Defined in
 
-[src/mutable/http.ts:26](https://github.com/alpinisme/utils/blob/c0860b6/src/mutable/http.ts#L26)
+[src/mutable/http.ts:26](https://github.com/alpinisme/utils/blob/dc5e134/src/mutable/http.ts#L26)
 
 ## Properties
 
@@ -55,19 +55,19 @@ Includes optional retry logic, auth token injection, and error handling
 
 #### Defined in
 
-[src/mutable/http.ts:20](https://github.com/alpinisme/utils/blob/c0860b6/src/mutable/http.ts#L20)
+[src/mutable/http.ts:20](https://github.com/alpinisme/utils/blob/dc5e134/src/mutable/http.ts#L20)
 
----
+___
 
 ### options
 
-• `Private` **options**: `RequestInit` & { `headers`: `Headers` }
+• `Private` **options**: `RequestInit` & { `headers`: `Headers`  }
 
 #### Defined in
 
-[src/mutable/http.ts:22](https://github.com/alpinisme/utils/blob/c0860b6/src/mutable/http.ts#L22)
+[src/mutable/http.ts:22](https://github.com/alpinisme/utils/blob/dc5e134/src/mutable/http.ts#L22)
 
----
+___
 
 ### retries
 
@@ -75,9 +75,9 @@ Includes optional retry logic, auth token injection, and error handling
 
 #### Defined in
 
-[src/mutable/http.ts:18](https://github.com/alpinisme/utils/blob/c0860b6/src/mutable/http.ts#L18)
+[src/mutable/http.ts:18](https://github.com/alpinisme/utils/blob/dc5e134/src/mutable/http.ts#L18)
 
----
+___
 
 ### retryDelay
 
@@ -85,7 +85,7 @@ Includes optional retry logic, auth token injection, and error handling
 
 #### Defined in
 
-[src/mutable/http.ts:19](https://github.com/alpinisme/utils/blob/c0860b6/src/mutable/http.ts#L19)
+[src/mutable/http.ts:19](https://github.com/alpinisme/utils/blob/dc5e134/src/mutable/http.ts#L19)
 
 ## Methods
 
@@ -111,8 +111,8 @@ get('/account/123/')
 
 #### Parameters
 
-| Name   | Type     |
-| :----- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `path` | `string` |
 
 #### Returns
@@ -121,9 +121,9 @@ get('/account/123/')
 
 #### Defined in
 
-[src/mutable/http.ts:78](https://github.com/alpinisme/utils/blob/c0860b6/src/mutable/http.ts#L78)
+[src/mutable/http.ts:78](https://github.com/alpinisme/utils/blob/dc5e134/src/mutable/http.ts#L78)
 
----
+___
 
 ### get
 
@@ -147,8 +147,8 @@ get('/account/1234')
 
 #### Parameters
 
-| Name   | Type     |
-| :----- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `path` | `string` |
 
 #### Returns
@@ -157,9 +157,9 @@ get('/account/1234')
 
 #### Defined in
 
-[src/mutable/http.ts:45](https://github.com/alpinisme/utils/blob/c0860b6/src/mutable/http.ts#L45)
+[src/mutable/http.ts:45](https://github.com/alpinisme/utils/blob/dc5e134/src/mutable/http.ts#L45)
 
----
+___
 
 ### handleResponse
 
@@ -167,8 +167,8 @@ get('/account/1234')
 
 #### Parameters
 
-| Name       | Type       |
-| :--------- | :--------- |
+| Name | Type |
+| :------ | :------ |
 | `response` | `Response` |
 
 #### Returns
@@ -177,9 +177,9 @@ get('/account/1234')
 
 #### Defined in
 
-[src/mutable/http.ts:105](https://github.com/alpinisme/utils/blob/c0860b6/src/mutable/http.ts#L105)
+[src/mutable/http.ts:105](https://github.com/alpinisme/utils/blob/dc5e134/src/mutable/http.ts#L105)
 
----
+___
 
 ### makeRequestWithRetries
 
@@ -189,11 +189,11 @@ Make request and retry on 5xx errors up to `retries` times
 
 #### Parameters
 
-| Name      | Type          |
-| :-------- | :------------ |
-| `path`    | `string`      |
+| Name | Type |
+| :------ | :------ |
+| `path` | `string` |
 | `options` | `RequestInit` |
-| `retries` | `number`      |
+| `retries` | `number` |
 
 #### Returns
 
@@ -201,9 +201,9 @@ Make request and retry on 5xx errors up to `retries` times
 
 #### Defined in
 
-[src/mutable/http.ts:88](https://github.com/alpinisme/utils/blob/c0860b6/src/mutable/http.ts#L88)
+[src/mutable/http.ts:88](https://github.com/alpinisme/utils/blob/dc5e134/src/mutable/http.ts#L88)
 
----
+___
 
 ### post
 
@@ -222,15 +222,15 @@ POST `path` at base url with optional body .
 **`Example`**
 
 ```ts
-post('/account/1234', { username: 'pinocchio', dream: 'becoming a human boy' })
+post('/account/1234', {username: 'pinocchio', dream: 'becoming a human boy'})
 ```
 
 #### Parameters
 
-| Name   | Type     |
-| :----- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `path` | `string` |
-| `body` | `any`    |
+| `body` | `any` |
 
 #### Returns
 
@@ -238,9 +238,9 @@ post('/account/1234', { username: 'pinocchio', dream: 'becoming a human boy' })
 
 #### Defined in
 
-[src/mutable/http.ts:56](https://github.com/alpinisme/utils/blob/c0860b6/src/mutable/http.ts#L56)
+[src/mutable/http.ts:56](https://github.com/alpinisme/utils/blob/dc5e134/src/mutable/http.ts#L56)
 
----
+___
 
 ### put
 
@@ -259,15 +259,15 @@ PUT `path` at base url with optional body .
 **`Example`**
 
 ```ts
-put('/account/1234', { username: 'jeeves' })
+put('/account/1234', {username: 'jeeves'})
 ```
 
 #### Parameters
 
-| Name    | Type     |
-| :------ | :------- |
-| `path`  | `string` |
-| `body?` | `any`    |
+| Name | Type |
+| :------ | :------ |
+| `path` | `string` |
+| `body?` | `any` |
 
 #### Returns
 
@@ -275,9 +275,9 @@ put('/account/1234', { username: 'jeeves' })
 
 #### Defined in
 
-[src/mutable/http.ts:67](https://github.com/alpinisme/utils/blob/c0860b6/src/mutable/http.ts#L67)
+[src/mutable/http.ts:67](https://github.com/alpinisme/utils/blob/dc5e134/src/mutable/http.ts#L67)
 
----
+___
 
 ### setAuthToken
 
@@ -287,8 +287,8 @@ set the token used in the authorization header
 
 #### Parameters
 
-| Name    | Type     |
-| :------ | :------- |
+| Name | Type |
+| :------ | :------ |
 | `token` | `string` |
 
 #### Returns
@@ -297,4 +297,4 @@ set the token used in the authorization header
 
 #### Defined in
 
-[src/mutable/http.ts:83](https://github.com/alpinisme/utils/blob/c0860b6/src/mutable/http.ts#L83)
+[src/mutable/http.ts:83](https://github.com/alpinisme/utils/blob/dc5e134/src/mutable/http.ts#L83)

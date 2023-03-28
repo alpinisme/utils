@@ -26,9 +26,9 @@
 
 #### Parameters
 
-| Name       | Type             |
-| :--------- | :--------------- |
-| `date`     | `Date`           |
+| Name | Type |
+| :------ | :------ |
+| `date` | `Date` |
 | `duration` | `DurationConfig` |
 
 #### Returns
@@ -37,9 +37,9 @@
 
 #### Defined in
 
-[src/pure-immutable/date-time.ts:61](https://github.com/alpinisme/utils/blob/c0860b6/src/pure-immutable/date-time.ts#L61)
+[src/pure-immutable/date-time.ts:61](https://github.com/alpinisme/utils/blob/dc5e134/src/pure-immutable/date-time.ts#L61)
 
----
+___
 
 ### durationBetween
 
@@ -50,10 +50,10 @@ Beyond that, calendars become significant.
 
 #### Parameters
 
-| Name    | Type                                              |
-| :------ | :------------------------------------------------ |
-| `start` | `Date`                                            |
-| `stop`  | `Date`                                            |
+| Name | Type |
+| :------ | :------ |
+| `start` | `Date` |
+| `stop` | `Date` |
 | `units` | [`DurationUnits`](../enums/date.DurationUnits.md) |
 
 #### Returns
@@ -62,9 +62,9 @@ Beyond that, calendars become significant.
 
 #### Defined in
 
-[src/pure-immutable/date-time.ts:91](https://github.com/alpinisme/utils/blob/c0860b6/src/pure-immutable/date-time.ts#L91)
+[src/pure-immutable/date-time.ts:91](https://github.com/alpinisme/utils/blob/dc5e134/src/pure-immutable/date-time.ts#L91)
 
----
+___
 
 ### isValidDate
 
@@ -74,8 +74,8 @@ Checks if date object contains a valid date
 
 #### Parameters
 
-| Name   | Type   |
-| :----- | :----- |
+| Name | Type |
+| :------ | :------ |
 | `date` | `Date` |
 
 #### Returns
@@ -84,4 +84,4 @@ Checks if date object contains a valid date
 
 #### Defined in
 
-[src/pure-immutable/date-time.ts:102](https://github.com/alpinisme/utils/blob/c0860b6/src/pure-immutable/date-time.ts#L102)
+[src/pure-immutable/date-time.ts:102](https://github.com/alpinisme/utils/blob/dc5e134/src/pure-immutable/date-time.ts#L102)

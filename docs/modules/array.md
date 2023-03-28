@@ -35,14 +35,14 @@
 
 #### Type parameters
 
-| Name | Type                         |
-| :--- | :--------------------------- |
-| `T`  | extends `string` \| `number` |
+| Name | Type |
+| :------ | :------ |
+| `T` | extends `string` \| `number` |
 
 #### Parameters
 
-| Name  | Type  |
-| :---- | :---- |
+| Name | Type |
+| :------ | :------ |
 | `arr` | `T`[] |
 
 #### Returns
@@ -51,9 +51,9 @@
 
 #### Defined in
 
-[src/pure-immutable/array.ts:110](https://github.com/alpinisme/utils/blob/c0860b6/src/pure-immutable/array.ts#L110)
+[src/pure-immutable/array.ts:110](https://github.com/alpinisme/utils/blob/dc5e134/src/pure-immutable/array.ts#L110)
 
----
+___
 
 ### countBy
 
@@ -61,16 +61,16 @@
 
 #### Type parameters
 
-| Name       | Type                                          |
-| :--------- | :-------------------------------------------- |
-| `T`        | `T`                                           |
+| Name | Type |
+| :------ | :------ |
+| `T` | `T` |
 | `Accessor` | extends (`item`: `T`) => `string` \| `number` |
 
 #### Parameters
 
-| Name       | Type       |
-| :--------- | :--------- |
-| `arr`      | `T`[]      |
+| Name | Type |
+| :------ | :------ |
+| `arr` | `T`[] |
 | `accessor` | `Accessor` |
 
 #### Returns
@@ -79,9 +79,9 @@
 
 #### Defined in
 
-[src/pure-immutable/array.ts:118](https://github.com/alpinisme/utils/blob/c0860b6/src/pure-immutable/array.ts#L118)
+[src/pure-immutable/array.ts:118](https://github.com/alpinisme/utils/blob/dc5e134/src/pure-immutable/array.ts#L118)
 
----
+___
 
 ### duplicates
 
@@ -90,13 +90,13 @@
 #### Type parameters
 
 | Name |
-| :--- |
-| `T`  |
+| :------ |
+| `T` |
 
 #### Parameters
 
-| Name     | Type  |
-| :------- | :---- |
+| Name | Type |
+| :------ | :------ |
 | `values` | `T`[] |
 
 #### Returns
@@ -105,37 +105,37 @@
 
 #### Defined in
 
-[src/pure-immutable/array.ts:76](https://github.com/alpinisme/utils/blob/c0860b6/src/pure-immutable/array.ts#L76)
+[src/pure-immutable/array.ts:76](https://github.com/alpinisme/utils/blob/dc5e134/src/pure-immutable/array.ts#L76)
 
----
+___
 
 ### duplicatesBy
 
-▸ **duplicatesBy**<`T`, `U`\>(`values`, `accessor`): { `matches`: `T`[] ; `value`: `U` }[]
+▸ **duplicatesBy**<`T`, `U`\>(`values`, `accessor`): { `matches`: `T`[] ; `value`: `U`  }[]
 
 #### Type parameters
 
-| Name | Type                           |
-| :--- | :----------------------------- |
-| `T`  | `T`                            |
-| `U`  | extends (`item`: `T`) => `any` |
+| Name | Type |
+| :------ | :------ |
+| `T` | `T` |
+| `U` | extends (`item`: `T`) => `any` |
 
 #### Parameters
 
-| Name       | Type  |
-| :--------- | :---- |
-| `values`   | `T`[] |
-| `accessor` | `U`   |
+| Name | Type |
+| :------ | :------ |
+| `values` | `T`[] |
+| `accessor` | `U` |
 
 #### Returns
 
-{ `matches`: `T`[] ; `value`: `U` }[]
+{ `matches`: `T`[] ; `value`: `U`  }[]
 
 #### Defined in
 
-[src/pure-immutable/array.ts:80](https://github.com/alpinisme/utils/blob/c0860b6/src/pure-immutable/array.ts#L80)
+[src/pure-immutable/array.ts:80](https://github.com/alpinisme/utils/blob/dc5e134/src/pure-immutable/array.ts#L80)
 
----
+___
 
 ### findAll
 
@@ -144,16 +144,16 @@
 #### Type parameters
 
 | Name |
-| :--- |
-| `T`  |
-| `U`  |
+| :------ |
+| `T` |
+| `U` |
 
 #### Parameters
 
-| Name       | Type                 |
-| :--------- | :------------------- |
-| `haystack` | `T`[]                |
-| `needle`   | `U`                  |
+| Name | Type |
+| :------ | :------ |
+| `haystack` | `T`[] |
+| `needle` | `U` |
 | `accessor` | (`item`: `T`) => `U` |
 
 #### Returns
@@ -162,9 +162,9 @@
 
 #### Defined in
 
-[src/pure-immutable/array.ts:72](https://github.com/alpinisme/utils/blob/c0860b6/src/pure-immutable/array.ts#L72)
+[src/pure-immutable/array.ts:72](https://github.com/alpinisme/utils/blob/dc5e134/src/pure-immutable/array.ts#L72)
 
----
+___
 
 ### findMatches
 
@@ -172,15 +172,15 @@
 
 #### Type parameters
 
-| Name | Type                               |
-| :--- | :--------------------------------- |
-| `T`  | extends `Record`<`string`, `any`\> |
+| Name | Type |
+| :------ | :------ |
+| `T` | extends `Record`<`string`, `any`\> |
 
 #### Parameters
 
-| Name    | Type            |
-| :------ | :-------------- |
-| `arr`   | `T`[]           |
+| Name | Type |
+| :------ | :------ |
+| `arr` | `T`[] |
 | `match` | `Partial`<`T`\> |
 
 #### Returns
@@ -189,9 +189,9 @@
 
 #### Defined in
 
-[src/pure-immutable/array.ts:142](https://github.com/alpinisme/utils/blob/c0860b6/src/pure-immutable/array.ts#L142)
+[src/pure-immutable/array.ts:142](https://github.com/alpinisme/utils/blob/dc5e134/src/pure-immutable/array.ts#L142)
 
----
+___
 
 ### groupBy
 
@@ -199,16 +199,16 @@
 
 #### Type parameters
 
-| Name       | Type                                          |
-| :--------- | :-------------------------------------------- |
-| `T`        | `T`                                           |
+| Name | Type |
+| :------ | :------ |
+| `T` | `T` |
 | `Accessor` | extends (`item`: `T`) => `string` \| `number` |
 
 #### Parameters
 
-| Name       | Type       |
-| :--------- | :--------- |
-| `arr`      | `T`[]      |
+| Name | Type |
+| :------ | :------ |
+| `arr` | `T`[] |
 | `accessor` | `Accessor` |
 
 #### Returns
@@ -217,9 +217,9 @@
 
 #### Defined in
 
-[src/pure-immutable/array.ts:130](https://github.com/alpinisme/utils/blob/c0860b6/src/pure-immutable/array.ts#L130)
+[src/pure-immutable/array.ts:130](https://github.com/alpinisme/utils/blob/dc5e134/src/pure-immutable/array.ts#L130)
 
----
+___
 
 ### insertNth
 
@@ -228,16 +228,16 @@
 #### Type parameters
 
 | Name |
-| :--- |
-| `T`  |
+| :------ |
+| `T` |
 
 #### Parameters
 
-| Name    | Type     |
-| :------ | :------- |
-| `arr`   | `T`[]    |
+| Name | Type |
+| :------ | :------ |
+| `arr` | `T`[] |
 | `index` | `number` |
-| `item`  | `T`      |
+| `item` | `T` |
 
 #### Returns
 
@@ -245,9 +245,9 @@
 
 #### Defined in
 
-[src/pure-immutable/array.ts:54](https://github.com/alpinisme/utils/blob/c0860b6/src/pure-immutable/array.ts#L54)
+[src/pure-immutable/array.ts:54](https://github.com/alpinisme/utils/blob/dc5e134/src/pure-immutable/array.ts#L54)
 
----
+___
 
 ### isEmpty
 
@@ -256,13 +256,13 @@
 #### Type parameters
 
 | Name |
-| :--- |
-| `X`  |
+| :------ |
+| `X` |
 
 #### Parameters
 
-| Name  | Type  |
-| :---- | :---- |
+| Name | Type |
+| :------ | :------ |
 | `arr` | `X`[] |
 
 #### Returns
@@ -271,9 +271,9 @@
 
 #### Defined in
 
-[src/pure-immutable/array.ts:102](https://github.com/alpinisme/utils/blob/c0860b6/src/pure-immutable/array.ts#L102)
+[src/pure-immutable/array.ts:102](https://github.com/alpinisme/utils/blob/dc5e134/src/pure-immutable/array.ts#L102)
 
----
+___
 
 ### isNonEmpty
 
@@ -282,13 +282,13 @@
 #### Type parameters
 
 | Name |
-| :--- |
-| `X`  |
+| :------ |
+| `X` |
 
 #### Parameters
 
-| Name  | Type  |
-| :---- | :---- |
+| Name | Type |
+| :------ | :------ |
 | `arr` | `X`[] |
 
 #### Returns
@@ -297,9 +297,9 @@
 
 #### Defined in
 
-[src/pure-immutable/array.ts:106](https://github.com/alpinisme/utils/blob/c0860b6/src/pure-immutable/array.ts#L106)
+[src/pure-immutable/array.ts:106](https://github.com/alpinisme/utils/blob/dc5e134/src/pure-immutable/array.ts#L106)
 
----
+___
 
 ### removeNth
 
@@ -308,14 +308,14 @@
 #### Type parameters
 
 | Name |
-| :--- |
-| `T`  |
+| :------ |
+| `T` |
 
 #### Parameters
 
-| Name    | Type     |
-| :------ | :------- |
-| `arr`   | `T`[]    |
+| Name | Type |
+| :------ | :------ |
+| `arr` | `T`[] |
 | `index` | `number` |
 
 #### Returns
@@ -324,9 +324,9 @@
 
 #### Defined in
 
-[src/pure-immutable/array.ts:68](https://github.com/alpinisme/utils/blob/c0860b6/src/pure-immutable/array.ts#L68)
+[src/pure-immutable/array.ts:68](https://github.com/alpinisme/utils/blob/dc5e134/src/pure-immutable/array.ts#L68)
 
----
+___
 
 ### reverse
 
@@ -335,13 +335,13 @@
 #### Type parameters
 
 | Name |
-| :--- |
-| `T`  |
+| :------ |
+| `T` |
 
 #### Parameters
 
-| Name  | Type  |
-| :---- | :---- |
+| Name | Type |
+| :------ | :------ |
 | `arr` | `T`[] |
 
 #### Returns
@@ -350,9 +350,9 @@
 
 #### Defined in
 
-[src/pure-immutable/array.ts:38](https://github.com/alpinisme/utils/blob/c0860b6/src/pure-immutable/array.ts#L38)
+[src/pure-immutable/array.ts:38](https://github.com/alpinisme/utils/blob/dc5e134/src/pure-immutable/array.ts#L38)
 
----
+___
 
 ### sortByNumber
 
@@ -361,16 +361,16 @@
 #### Type parameters
 
 | Name |
-| :--- |
-| `T`  |
+| :------ |
+| `T` |
 
 #### Parameters
 
-| Name       | Type                      | Default value |
-| :--------- | :------------------------ | :------------ |
-| `arr`      | `T`[]                     | `undefined`   |
-| `accessor` | (`item`: `T`) => `number` | `undefined`   |
-| `order`    | `"ASC"` \| `"DESC"`       | `'ASC'`       |
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `arr` | `T`[] | `undefined` |
+| `accessor` | (`item`: `T`) => `number` | `undefined` |
+| `order` | ``"ASC"`` \| ``"DESC"`` | `'ASC'` |
 
 #### Returns
 
@@ -378,9 +378,9 @@
 
 #### Defined in
 
-[src/pure-immutable/array.ts:28](https://github.com/alpinisme/utils/blob/c0860b6/src/pure-immutable/array.ts#L28)
+[src/pure-immutable/array.ts:28](https://github.com/alpinisme/utils/blob/dc5e134/src/pure-immutable/array.ts#L28)
 
----
+___
 
 ### sortByString
 
@@ -389,16 +389,16 @@
 #### Type parameters
 
 | Name |
-| :--- |
-| `T`  |
+| :------ |
+| `T` |
 
 #### Parameters
 
-| Name       | Type                      | Default value |
-| :--------- | :------------------------ | :------------ |
-| `arr`      | `T`[]                     | `undefined`   |
-| `accessor` | (`item`: `T`) => `string` | `undefined`   |
-| `order`    | `"ASC"` \| `"DESC"`       | `'ASC'`       |
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `arr` | `T`[] | `undefined` |
+| `accessor` | (`item`: `T`) => `string` | `undefined` |
+| `order` | ``"ASC"`` \| ``"DESC"`` | `'ASC'` |
 
 #### Returns
 
@@ -406,9 +406,9 @@
 
 #### Defined in
 
-[src/pure-immutable/array.ts:18](https://github.com/alpinisme/utils/blob/c0860b6/src/pure-immutable/array.ts#L18)
+[src/pure-immutable/array.ts:18](https://github.com/alpinisme/utils/blob/dc5e134/src/pure-immutable/array.ts#L18)
 
----
+___
 
 ### take
 
@@ -417,14 +417,14 @@
 #### Type parameters
 
 | Name |
-| :--- |
-| `T`  |
+| :------ |
+| `T` |
 
 #### Parameters
 
-| Name    | Type     |
-| :------ | :------- |
-| `arr`   | `T`[]    |
+| Name | Type |
+| :------ | :------ |
+| `arr` | `T`[] |
 | `count` | `number` |
 
 #### Returns
@@ -433,9 +433,9 @@
 
 #### Defined in
 
-[src/pure-immutable/array.ts:42](https://github.com/alpinisme/utils/blob/c0860b6/src/pure-immutable/array.ts#L42)
+[src/pure-immutable/array.ts:42](https://github.com/alpinisme/utils/blob/dc5e134/src/pure-immutable/array.ts#L42)
 
----
+___
 
 ### takeRight
 
@@ -444,14 +444,14 @@
 #### Type parameters
 
 | Name |
-| :--- |
-| `T`  |
+| :------ |
+| `T` |
 
 #### Parameters
 
-| Name    | Type     |
-| :------ | :------- |
-| `arr`   | `T`[]    |
+| Name | Type |
+| :------ | :------ |
+| `arr` | `T`[] |
 | `count` | `number` |
 
 #### Returns
@@ -460,9 +460,9 @@
 
 #### Defined in
 
-[src/pure-immutable/array.ts:47](https://github.com/alpinisme/utils/blob/c0860b6/src/pure-immutable/array.ts#L47)
+[src/pure-immutable/array.ts:47](https://github.com/alpinisme/utils/blob/dc5e134/src/pure-immutable/array.ts#L47)
 
----
+___
 
 ### toArray
 
@@ -471,13 +471,13 @@
 #### Type parameters
 
 | Name |
-| :--- |
-| `X`  |
+| :------ |
+| `X` |
 
 #### Parameters
 
-| Name | Type             |
-| :--- | :--------------- |
+| Name | Type |
+| :------ | :------ |
 | `xs` | `Iterable`<`X`\> |
 
 #### Returns
@@ -486,9 +486,9 @@
 
 #### Defined in
 
-[src/pure-immutable/array.ts:98](https://github.com/alpinisme/utils/blob/c0860b6/src/pure-immutable/array.ts#L98)
+[src/pure-immutable/array.ts:98](https://github.com/alpinisme/utils/blob/dc5e134/src/pure-immutable/array.ts#L98)
 
----
+___
 
 ### uniques
 
@@ -497,13 +497,13 @@
 #### Type parameters
 
 | Name |
-| :--- |
-| `T`  |
+| :------ |
+| `T` |
 
 #### Parameters
 
-| Name     | Type  |
-| :------- | :---- |
+| Name | Type |
+| :------ | :------ |
 | `values` | `T`[] |
 
 #### Returns
@@ -512,9 +512,9 @@
 
 #### Defined in
 
-[src/pure-immutable/array.ts:13](https://github.com/alpinisme/utils/blob/c0860b6/src/pure-immutable/array.ts#L13)
+[src/pure-immutable/array.ts:13](https://github.com/alpinisme/utils/blob/dc5e134/src/pure-immutable/array.ts#L13)
 
----
+___
 
 ### uniquesBy
 
@@ -524,16 +524,16 @@ take first of each unique value, given the accessor function
 
 #### Type parameters
 
-| Name  |
-| :---- |
-| `T`   |
+| Name |
+| :------ |
+| `T` |
 | `Key` |
 
 #### Parameters
 
-| Name       | Type                   |
-| :--------- | :--------------------- |
-| `arr`      | `T`[]                  |
+| Name | Type |
+| :------ | :------ |
+| `arr` | `T`[] |
 | `accessor` | (`item`: `T`) => `Key` |
 
 #### Returns
@@ -542,9 +542,9 @@ take first of each unique value, given the accessor function
 
 #### Defined in
 
-[src/pure-immutable/array.ts:7](https://github.com/alpinisme/utils/blob/c0860b6/src/pure-immutable/array.ts#L7)
+[src/pure-immutable/array.ts:7](https://github.com/alpinisme/utils/blob/dc5e134/src/pure-immutable/array.ts#L7)
 
----
+___
 
 ### updateNth
 
@@ -553,15 +553,15 @@ take first of each unique value, given the accessor function
 #### Type parameters
 
 | Name |
-| :--- |
-| `T`  |
+| :------ |
+| `T` |
 
 #### Parameters
 
-| Name      | Type                |
-| :-------- | :------------------ |
-| `arr`     | `T`[]               |
-| `index`   | `number`            |
+| Name | Type |
+| :------ | :------ |
+| `arr` | `T`[] |
+| `index` | `number` |
 | `updater` | (`old`: `T`) => `T` |
 
 #### Returns
@@ -570,4 +570,4 @@ take first of each unique value, given the accessor function
 
 #### Defined in
 
-[src/pure-immutable/array.ts:60](https://github.com/alpinisme/utils/blob/c0860b6/src/pure-immutable/array.ts#L60)
+[src/pure-immutable/array.ts:60](https://github.com/alpinisme/utils/blob/dc5e134/src/pure-immutable/array.ts#L60)

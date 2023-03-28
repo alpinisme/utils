@@ -19,14 +19,14 @@
 #### Type parameters
 
 | Name |
-| :--- |
-| `T`  |
+| :------ |
+| `T` |
 
 #### Parameters
 
-| Name   | Type |
-| :----- | :--- |
-| `item` | `T`  |
+| Name | Type |
+| :------ | :------ |
+| `item` | `T` |
 
 #### Returns
 
@@ -34,9 +34,9 @@
 
 #### Defined in
 
-[src/pure-immutable/base.ts:1](https://github.com/alpinisme/utils/blob/c0860b6/src/pure-immutable/base.ts#L1)
+[src/pure-immutable/base.ts:1](https://github.com/alpinisme/utils/blob/dc5e134/src/pure-immutable/base.ts#L1)
 
----
+___
 
 ### isError
 
@@ -44,8 +44,8 @@
 
 #### Parameters
 
-| Name  | Type      |
-| :---- | :-------- |
+| Name | Type |
+| :------ | :------ |
 | `err` | `unknown` |
 
 #### Returns
@@ -54,9 +54,9 @@ err is Error
 
 #### Defined in
 
-[src/pure-immutable/base.ts:5](https://github.com/alpinisme/utils/blob/c0860b6/src/pure-immutable/base.ts#L5)
+[src/pure-immutable/base.ts:5](https://github.com/alpinisme/utils/blob/dc5e134/src/pure-immutable/base.ts#L5)
 
----
+___
 
 ### toString
 
@@ -64,15 +64,15 @@ err is Error
 
 #### Type parameters
 
-| Name | Type             |
-| :--- | :--------------- |
-| `T`  | extends `Object` |
+| Name | Type |
+| :------ | :------ |
+| `T` | extends `Object` |
 
 #### Parameters
 
-| Name  | Type |
-| :---- | :--- |
-| `val` | `T`  |
+| Name | Type |
+| :------ | :------ |
+| `val` | `T` |
 
 #### Returns
 
@@ -80,4 +80,4 @@ err is Error
 
 #### Defined in
 
-[src/pure-immutable/base.ts:9](https://github.com/alpinisme/utils/blob/c0860b6/src/pure-immutable/base.ts#L9)
+[src/pure-immutable/base.ts:9](https://github.com/alpinisme/utils/blob/dc5e134/src/pure-immutable/base.ts#L9)

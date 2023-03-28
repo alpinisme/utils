@@ -16,8 +16,8 @@
 
 #### Parameters
 
-| Name | Type     |
-| :--- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `ms` | `number` |
 
 #### Returns
@@ -26,4 +26,4 @@
 
 #### Defined in
 
-[src/impure-immutable/timing.ts:1](https://github.com/alpinisme/utils/blob/c0860b6/src/impure-immutable/timing.ts#L1)
+[src/impure-immutable/timing.ts:1](https://github.com/alpinisme/utils/blob/dc5e134/src/impure-immutable/timing.ts#L1)

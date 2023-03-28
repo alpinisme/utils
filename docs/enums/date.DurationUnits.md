@@ -18,48 +18,48 @@
 
 ### Days
 
-• **Days** = `"days"`
+• **Days** = ``"days"``
 
 #### Defined in
 
-[src/pure-immutable/date-time.ts:8](https://github.com/alpinisme/utils/blob/c0860b6/src/pure-immutable/date-time.ts#L8)
+[src/pure-immutable/date-time.ts:8](https://github.com/alpinisme/utils/blob/dc5e134/src/pure-immutable/date-time.ts#L8)
 
----
+___
 
 ### Hours
 
-• **Hours** = `"hours"`
+• **Hours** = ``"hours"``
 
 #### Defined in
 
-[src/pure-immutable/date-time.ts:7](https://github.com/alpinisme/utils/blob/c0860b6/src/pure-immutable/date-time.ts#L7)
+[src/pure-immutable/date-time.ts:7](https://github.com/alpinisme/utils/blob/dc5e134/src/pure-immutable/date-time.ts#L7)
 
----
+___
 
 ### Milliseconds
 
-• **Milliseconds** = `"milliseconds"`
+• **Milliseconds** = ``"milliseconds"``
 
 #### Defined in
 
-[src/pure-immutable/date-time.ts:4](https://github.com/alpinisme/utils/blob/c0860b6/src/pure-immutable/date-time.ts#L4)
+[src/pure-immutable/date-time.ts:4](https://github.com/alpinisme/utils/blob/dc5e134/src/pure-immutable/date-time.ts#L4)
 
----
+___
 
 ### Minutes
 
-• **Minutes** = `"minutes"`
+• **Minutes** = ``"minutes"``
 
 #### Defined in
 
-[src/pure-immutable/date-time.ts:6](https://github.com/alpinisme/utils/blob/c0860b6/src/pure-immutable/date-time.ts#L6)
+[src/pure-immutable/date-time.ts:6](https://github.com/alpinisme/utils/blob/dc5e134/src/pure-immutable/date-time.ts#L6)
 
----
+___
 
 ### Seconds
 
-• **Seconds** = `"seconds"`
+• **Seconds** = ``"seconds"``
 
 #### Defined in
 
-[src/pure-immutable/date-time.ts:5](https://github.com/alpinisme/utils/blob/c0860b6/src/pure-immutable/date-time.ts#L5)
+[src/pure-immutable/date-time.ts:5](https://github.com/alpinisme/utils/blob/dc5e134/src/pure-immutable/date-time.ts#L5)

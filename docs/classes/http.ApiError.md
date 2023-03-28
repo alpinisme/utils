@@ -46,8 +46,8 @@ represents any non-ok http response
 
 #### Parameters
 
-| Name       | Type       |
-| :--------- | :--------- |
+| Name | Type |
+| :------ | :------ |
 | `response` | `Response` |
 
 #### Overrides
@@ -56,7 +56,7 @@ Error.constructor
 
 #### Defined in
 
-[src/mutable/http.ts:124](https://github.com/alpinisme/utils/blob/c0860b6/src/mutable/http.ts#L124)
+[src/mutable/http.ts:124](https://github.com/alpinisme/utils/blob/dc5e134/src/mutable/http.ts#L124)
 
 ## Properties
 
@@ -72,7 +72,7 @@ Error.cause
 
 .yarn/cache/typescript-patch-772e75d75e-b63cb742fb.zip/node_modules/typescript/lib/lib.es2022.error.d.ts:24
 
----
+___
 
 ### message
 
@@ -86,7 +86,7 @@ Error.message
 
 .yarn/cache/typescript-patch-772e75d75e-b63cb742fb.zip/node_modules/typescript/lib/lib.es5.d.ts:1055
 
----
+___
 
 ### name
 
@@ -100,7 +100,7 @@ Error.name
 
 .yarn/cache/typescript-patch-772e75d75e-b63cb742fb.zip/node_modules/typescript/lib/lib.es5.d.ts:1054
 
----
+___
 
 ### responseText
 
@@ -108,9 +108,9 @@ Error.name
 
 #### Defined in
 
-[src/mutable/http.ts:120](https://github.com/alpinisme/utils/blob/c0860b6/src/mutable/http.ts#L120)
+[src/mutable/http.ts:120](https://github.com/alpinisme/utils/blob/dc5e134/src/mutable/http.ts#L120)
 
----
+___
 
 ### stack
 
@@ -124,7 +124,7 @@ Error.stack
 
 .yarn/cache/typescript-patch-772e75d75e-b63cb742fb.zip/node_modules/typescript/lib/lib.es5.d.ts:1056
 
----
+___
 
 ### status
 
@@ -132,9 +132,9 @@ Error.stack
 
 #### Defined in
 
-[src/mutable/http.ts:122](https://github.com/alpinisme/utils/blob/c0860b6/src/mutable/http.ts#L122)
+[src/mutable/http.ts:122](https://github.com/alpinisme/utils/blob/dc5e134/src/mutable/http.ts#L122)
 
----
+___
 
 ### url
 
@@ -142,9 +142,9 @@ Error.stack
 
 #### Defined in
 
-[src/mutable/http.ts:121](https://github.com/alpinisme/utils/blob/c0860b6/src/mutable/http.ts#L121)
+[src/mutable/http.ts:121](https://github.com/alpinisme/utils/blob/dc5e134/src/mutable/http.ts#L121)
 
----
+___
 
 ### prepareStackTrace
 
@@ -162,9 +162,9 @@ https://v8.dev/docs/stack-trace-api#customizing-stack-traces
 
 ##### Parameters
 
-| Name          | Type         |
-| :------------ | :----------- |
-| `err`         | `Error`      |
+| Name | Type |
+| :------ | :------ |
+| `err` | `Error` |
 | `stackTraces` | `CallSite`[] |
 
 ##### Returns
@@ -179,7 +179,7 @@ Error.prepareStackTrace
 
 .yarn/cache/@types-node-npm-18.15.9-8ef19f541e-5165f84f2f.zip/node_modules/@types/node/globals.d.ts:11
 
----
+___
 
 ### stackTraceLimit
 
@@ -203,9 +203,9 @@ Create .stack property on a target object
 
 #### Parameters
 
-| Name              | Type       |
-| :---------------- | :--------- |
-| `targetObject`    | `object`   |
+| Name | Type |
+| :------ | :------ |
+| `targetObject` | `object` |
 | `constructorOpt?` | `Function` |
 
 #### Returns

@@ -17,14 +17,14 @@
 #### Type parameters
 
 | Name |
-| :--- |
-| `T`  |
+| :------ |
+| `T` |
 
 #### Parameters
 
-| Name  | Type |
-| :---- | :--- |
-| `arg` | `T`  |
+| Name | Type |
+| :------ | :------ |
+| `arg` | `T` |
 
 #### Returns
 
@@ -32,4 +32,4 @@
 
 #### Defined in
 
-[src/impure-immutable/io.ts:1](https://github.com/alpinisme/utils/blob/c0860b6/src/impure-immutable/io.ts#L1)
+[src/impure-immutable/io.ts:1](https://github.com/alpinisme/utils/blob/dc5e134/src/impure-immutable/io.ts#L1)

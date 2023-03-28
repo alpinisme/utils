@@ -20,10 +20,10 @@ generates random float between lower and upper bounds (inclusive)
 
 #### Parameters
 
-| Name    | Type     |
-| :------ | :------- |
+| Name | Type |
+| :------ | :------ |
 | `start` | `number` |
-| `end`   | `number` |
+| `end` | `number` |
 
 #### Returns
 
@@ -31,9 +31,9 @@ generates random float between lower and upper bounds (inclusive)
 
 #### Defined in
 
-[src/impure-immutable/random.ts:19](https://github.com/alpinisme/utils/blob/c0860b6/src/impure-immutable/random.ts#L19)
+[src/impure-immutable/random.ts:19](https://github.com/alpinisme/utils/blob/dc5e134/src/impure-immutable/random.ts#L19)
 
----
+___
 
 ### randomInt
 
@@ -43,10 +43,10 @@ generates random int between lower and upper bounds (inclusive)
 
 #### Parameters
 
-| Name    | Type     |
-| :------ | :------- |
+| Name | Type |
+| :------ | :------ |
 | `start` | `number` |
-| `end`   | `number` |
+| `end` | `number` |
 
 #### Returns
 
@@ -54,9 +54,9 @@ generates random int between lower and upper bounds (inclusive)
 
 #### Defined in
 
-[src/impure-immutable/random.ts:27](https://github.com/alpinisme/utils/blob/c0860b6/src/impure-immutable/random.ts#L27)
+[src/impure-immutable/random.ts:27](https://github.com/alpinisme/utils/blob/dc5e134/src/impure-immutable/random.ts#L27)
 
----
+___
 
 ### weightedRandom
 
@@ -67,14 +67,14 @@ generates values randomly according to specified weights
 **`Example`**
 
 ```ts
-weightedRandom({ true: 75, false: 25 }) // returns true 3 out of 4 times
+weightedRandom({true: 75, false: 25}) // returns true 3 out of 4 times
 ```
 
 #### Parameters
 
-| Name            | Type     |
-| :-------------- | :------- |
-| `weights`       | `Object` |
+| Name | Type |
+| :------ | :------ |
+| `weights` | `Object` |
 | `weights.value` | `number` |
 
 #### Returns
@@ -83,4 +83,4 @@ weightedRandom({ true: 75, false: 25 }) // returns true 3 out of 4 times
 
 #### Defined in
 
-[src/impure-immutable/random.ts:7](https://github.com/alpinisme/utils/blob/c0860b6/src/impure-immutable/random.ts#L7)
+[src/impure-immutable/random.ts:7](https://github.com/alpinisme/utils/blob/dc5e134/src/impure-immutable/random.ts#L7)
