@@ -1,5 +1,5 @@
 import { milliseconds } from '../impure-immutable'
-import { DurationMS, safeInvoke } from '../pure-immutable'
+import { DurationMs, safeInvoke } from '../pure-immutable'
 
 type ConstructorProps = {
   retries?: number
@@ -25,7 +25,7 @@ export class ApiClient {
 
   constructor(props: ConstructorProps) {
     this.retries = props.retries ?? 0
-    this.retryDelay = props.retryDelay ?? DurationMS.fromMinutes(1)
+    this.retryDelay = props.retryDelay ?? DurationMs.fromMinutes(1)
     this.baseUrl = props.baseUrl
     if (props.includeCredentials) {
       this.options.credentials = 'include'

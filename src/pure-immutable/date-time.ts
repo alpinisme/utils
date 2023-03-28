@@ -14,7 +14,7 @@ export enum DurationUnits {
  * Duration units up to days supported.
  * Beyond that, calendars become significant.
  */
-export class DurationMS {
+export class DurationMs {
   private static readonly multiplier = {
     milliseconds: 1,
     seconds: 1_000,
@@ -93,7 +93,7 @@ export function durationBetween(start: Date, stop: Date, units: DurationUnits) {
 
   const method = `to${capitalize(units)}` as const
 
-  return DurationMS[method](durationInMS)
+  return DurationMs[method](durationInMS)
 }
 
 /**
