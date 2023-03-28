@@ -32,4 +32,4 @@
 
 #### Defined in
 
-[src/impure-immutable/io.ts:1](https://github.com/alpinisme/utils/blob/e71e104/src/impure-immutable/io.ts#L1)
+[src/impure-immutable/io.ts:1](https://github.com/alpinisme/utils/blob/026495b/src/impure-immutable/io.ts#L1)

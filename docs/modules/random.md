@@ -31,7 +31,7 @@ generates random float between lower and upper bounds (inclusive)
 
 #### Defined in
 
-[src/impure-immutable/random.ts:19](https://github.com/alpinisme/utils/blob/e71e104/src/impure-immutable/random.ts#L19)
+[src/impure-immutable/random.ts:19](https://github.com/alpinisme/utils/blob/026495b/src/impure-immutable/random.ts#L19)
 
 ___
 
@@ -54,7 +54,7 @@ generates random int between lower and upper bounds (inclusive)
 
 #### Defined in
 
-[src/impure-immutable/random.ts:27](https://github.com/alpinisme/utils/blob/e71e104/src/impure-immutable/random.ts#L27)
+[src/impure-immutable/random.ts:27](https://github.com/alpinisme/utils/blob/026495b/src/impure-immutable/random.ts#L27)
 
 ___
 
@@ -83,4 +83,4 @@ weightedRandom({true: 75, false: 25}) // returns true 3 out of 4 times
 
 #### Defined in
 
-[src/impure-immutable/random.ts:7](https://github.com/alpinisme/utils/blob/e71e104/src/impure-immutable/random.ts#L7)
+[src/impure-immutable/random.ts:7](https://github.com/alpinisme/utils/blob/026495b/src/impure-immutable/random.ts#L7)

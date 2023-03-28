@@ -22,7 +22,7 @@
 
 #### Defined in
 
-[src/pure-immutable/date-time.ts:8](https://github.com/alpinisme/utils/blob/e71e104/src/pure-immutable/date-time.ts#L8)
+[src/pure-immutable/date-time.ts:8](https://github.com/alpinisme/utils/blob/026495b/src/pure-immutable/date-time.ts#L8)
 
 ___
 
@@ -32,7 +32,7 @@ ___
 
 #### Defined in
 
-[src/pure-immutable/date-time.ts:7](https://github.com/alpinisme/utils/blob/e71e104/src/pure-immutable/date-time.ts#L7)
+[src/pure-immutable/date-time.ts:7](https://github.com/alpinisme/utils/blob/026495b/src/pure-immutable/date-time.ts#L7)
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 #### Defined in
 
-[src/pure-immutable/date-time.ts:4](https://github.com/alpinisme/utils/blob/e71e104/src/pure-immutable/date-time.ts#L4)
+[src/pure-immutable/date-time.ts:4](https://github.com/alpinisme/utils/blob/026495b/src/pure-immutable/date-time.ts#L4)
 
 ___
 
@@ -52,7 +52,7 @@ ___
 
 #### Defined in
 
-[src/pure-immutable/date-time.ts:6](https://github.com/alpinisme/utils/blob/e71e104/src/pure-immutable/date-time.ts#L6)
+[src/pure-immutable/date-time.ts:6](https://github.com/alpinisme/utils/blob/026495b/src/pure-immutable/date-time.ts#L6)
 
 ___
 
@@ -62,4 +62,4 @@ ___
 
 #### Defined in
 
-[src/pure-immutable/date-time.ts:5](https://github.com/alpinisme/utils/blob/e71e104/src/pure-immutable/date-time.ts#L5)
+[src/pure-immutable/date-time.ts:5](https://github.com/alpinisme/utils/blob/026495b/src/pure-immutable/date-time.ts#L5)
