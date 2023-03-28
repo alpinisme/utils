@@ -56,7 +56,7 @@ Error.constructor
 
 #### Defined in
 
-[src/mutable/http.ts:120](https://github.com/alpinisme/utils/blob/026495b/src/mutable/http.ts#L120)
+[src/mutable/http.ts:124](https://github.com/alpinisme/utils/blob/c0860b6/src/mutable/http.ts#L124)
 
 ## Properties
 
@@ -108,7 +108,7 @@ ___
 
 #### Defined in
 
-[src/mutable/http.ts:116](https://github.com/alpinisme/utils/blob/026495b/src/mutable/http.ts#L116)
+[src/mutable/http.ts:120](https://github.com/alpinisme/utils/blob/c0860b6/src/mutable/http.ts#L120)
 
 ___
 
@@ -132,7 +132,7 @@ ___
 
 #### Defined in
 
-[src/mutable/http.ts:118](https://github.com/alpinisme/utils/blob/026495b/src/mutable/http.ts#L118)
+[src/mutable/http.ts:122](https://github.com/alpinisme/utils/blob/c0860b6/src/mutable/http.ts#L122)
 
 ___
 
@@ -142,7 +142,7 @@ ___
 
 #### Defined in
 
-[src/mutable/http.ts:117](https://github.com/alpinisme/utils/blob/026495b/src/mutable/http.ts#L117)
+[src/mutable/http.ts:121](https://github.com/alpinisme/utils/blob/c0860b6/src/mutable/http.ts#L121)
 
 ___
 

@@ -45,7 +45,7 @@ Includes optional retry logic, auth token injection, and error handling
 
 #### Defined in
 
-[src/mutable/http.ts:26](https://github.com/alpinisme/utils/blob/026495b/src/mutable/http.ts#L26)
+[src/mutable/http.ts:26](https://github.com/alpinisme/utils/blob/c0860b6/src/mutable/http.ts#L26)
 
 ## Properties
 
@@ -55,7 +55,7 @@ Includes optional retry logic, auth token injection, and error handling
 
 #### Defined in
 
-[src/mutable/http.ts:20](https://github.com/alpinisme/utils/blob/026495b/src/mutable/http.ts#L20)
+[src/mutable/http.ts:20](https://github.com/alpinisme/utils/blob/c0860b6/src/mutable/http.ts#L20)
 
 ___
 
@@ -65,7 +65,7 @@ ___
 
 #### Defined in
 
-[src/mutable/http.ts:22](https://github.com/alpinisme/utils/blob/026495b/src/mutable/http.ts#L22)
+[src/mutable/http.ts:22](https://github.com/alpinisme/utils/blob/c0860b6/src/mutable/http.ts#L22)
 
 ___
 
@@ -75,7 +75,7 @@ ___
 
 #### Defined in
 
-[src/mutable/http.ts:18](https://github.com/alpinisme/utils/blob/026495b/src/mutable/http.ts#L18)
+[src/mutable/http.ts:18](https://github.com/alpinisme/utils/blob/c0860b6/src/mutable/http.ts#L18)
 
 ___
 
@@ -85,7 +85,7 @@ ___
 
 #### Defined in
 
-[src/mutable/http.ts:19](https://github.com/alpinisme/utils/blob/026495b/src/mutable/http.ts#L19)
+[src/mutable/http.ts:19](https://github.com/alpinisme/utils/blob/c0860b6/src/mutable/http.ts#L19)
 
 ## Methods
 
@@ -97,7 +97,11 @@ DELETE `path` at base url.
 
 **`Throws`**
 
-`ApiError` if response not ok
+[ClientSideApiError](http.ClientSideApiError.md) if response in 400-series
+
+**`Throws`**
+
+[ServerSideApiError](http.ServerSideApiError.md) if response in 500-series
 
 **`Example`**
 
@@ -117,7 +121,7 @@ get('/account/123/')
 
 #### Defined in
 
-[src/mutable/http.ts:74](https://github.com/alpinisme/utils/blob/026495b/src/mutable/http.ts#L74)
+[src/mutable/http.ts:78](https://github.com/alpinisme/utils/blob/c0860b6/src/mutable/http.ts#L78)
 
 ___
 
@@ -129,7 +133,11 @@ GET `path` at base url.
 
 **`Throws`**
 
-`ApiError` if response not ok
+[ClientSideApiError](http.ClientSideApiError.md) if response in 400-series
+
+**`Throws`**
+
+[ServerSideApiError](http.ServerSideApiError.md) if response in 500-series
 
 **`Example`**
 
@@ -149,7 +157,7 @@ get('/account/1234')
 
 #### Defined in
 
-[src/mutable/http.ts:44](https://github.com/alpinisme/utils/blob/026495b/src/mutable/http.ts#L44)
+[src/mutable/http.ts:45](https://github.com/alpinisme/utils/blob/c0860b6/src/mutable/http.ts#L45)
 
 ___
 
@@ -169,7 +177,7 @@ ___
 
 #### Defined in
 
-[src/mutable/http.ts:101](https://github.com/alpinisme/utils/blob/026495b/src/mutable/http.ts#L101)
+[src/mutable/http.ts:105](https://github.com/alpinisme/utils/blob/c0860b6/src/mutable/http.ts#L105)
 
 ___
 
@@ -193,7 +201,7 @@ Make request and retry on 5xx errors up to `retries` times
 
 #### Defined in
 
-[src/mutable/http.ts:84](https://github.com/alpinisme/utils/blob/026495b/src/mutable/http.ts#L84)
+[src/mutable/http.ts:88](https://github.com/alpinisme/utils/blob/c0860b6/src/mutable/http.ts#L88)
 
 ___
 
@@ -205,7 +213,11 @@ POST `path` at base url with optional body .
 
 **`Throws`**
 
-`ApiError` if response not ok
+[ClientSideApiError](http.ClientSideApiError.md) if response in 400-series
+
+**`Throws`**
+
+[ServerSideApiError](http.ServerSideApiError.md) if response in 500-series
 
 **`Example`**
 
@@ -226,7 +238,7 @@ post('/account/1234', {username: 'pinocchio', dream: 'becoming a human boy'})
 
 #### Defined in
 
-[src/mutable/http.ts:54](https://github.com/alpinisme/utils/blob/026495b/src/mutable/http.ts#L54)
+[src/mutable/http.ts:56](https://github.com/alpinisme/utils/blob/c0860b6/src/mutable/http.ts#L56)
 
 ___
 
@@ -238,7 +250,11 @@ PUT `path` at base url with optional body .
 
 **`Throws`**
 
-`ApiError` if response not ok
+[ClientSideApiError](http.ClientSideApiError.md) if response in 400-series
+
+**`Throws`**
+
+[ServerSideApiError](http.ServerSideApiError.md) if response in 500-series
 
 **`Example`**
 
@@ -259,7 +275,7 @@ put('/account/1234', {username: 'jeeves'})
 
 #### Defined in
 
-[src/mutable/http.ts:64](https://github.com/alpinisme/utils/blob/026495b/src/mutable/http.ts#L64)
+[src/mutable/http.ts:67](https://github.com/alpinisme/utils/blob/c0860b6/src/mutable/http.ts#L67)
 
 ___
 
@@ -281,4 +297,4 @@ set the token used in the authorization header
 
 #### Defined in
 
-[src/mutable/http.ts:79](https://github.com/alpinisme/utils/blob/026495b/src/mutable/http.ts#L79)
+[src/mutable/http.ts:83](https://github.com/alpinisme/utils/blob/c0860b6/src/mutable/http.ts#L83)
