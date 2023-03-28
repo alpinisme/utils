@@ -1,14 +1,16 @@
 export * from './array';
-export * as arr from './array';
+export * as array from './array';
 export * from './base';
 export * as base from './base';
 export * from './date-time';
-export * as dateTime from './date-time';
+export * as date from './date-time';
 export * from './function';
-export * as fn from './function';
+export * as func from './function';
 export * from './number';
-export * as num from './number';
+export * as number from './number';
 export * from './object';
-export * as obj from './object';
+export * as object from './object';
 export * from './string';
-export * as str from './string';
+export * as string from './string';
+
+//
