@@ -3,11 +3,13 @@
 
 if git diff-tree --no-commit-id --name-only HEAD -r  | grep -q "[^test]\.ts"; then
     
-    echo "trying to read"
     color="\033[1;35m"
-    read -q "$color\n\nDocs require updating. Should I update them and commit\? (y/n)" SHOULD_CONTINUE
+    echo "$color\n\nDocs require updating."
 
-    if [ $SHOULD_CONTINUE == 'yes' ]; then 
+    exec < /dev/tty
+    read -p "Should I update them and commit\? (y/n)" -n 1 
+
+    if [[ $REPLY =~ ^[yY]$ ]]; then 
         yarn generate:docs
         git add docs
         git commit -m "docs: auto update"
