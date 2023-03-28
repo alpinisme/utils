@@ -3,8 +3,9 @@
 
 if git diff-tree --no-commit-id --name-only HEAD -r  | grep -q "[^test]\.ts"; then
     
+    echo "trying to read"
     color="\033[1;35m"
-    read -p "$color\n\nDocs require updating. Should I update them and commit? (y/n)" SHOULD_CONTINUE
+    read -q "$color\n\nDocs require updating. Should I update them and commit\? (y/n)" SHOULD_CONTINUE
 
     if [ $SHOULD_CONTINUE == 'yes' ]; then 
         yarn generate:docs
