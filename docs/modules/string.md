@@ -20,15 +20,15 @@ Capitalize each word (e.g., 'this string' -> 'This String')
 
 #### Type parameters
 
-| Name | Type |
-| :------ | :------ |
-| `T` | extends `string` |
+| Name | Type             |
+| :--- | :--------------- |
+| `T`  | extends `string` |
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `str` | `T` |
+| Name  | Type |
+| :---- | :--- |
+| `str` | `T`  |
 
 #### Returns
 
@@ -38,7 +38,7 @@ Capitalize each word (e.g., 'this string' -> 'This String')
 
 [src/pure-immutable/string.ts:25](https://github.com/alpinisme/utils/blob/c0860b6/src/pure-immutable/string.ts#L25)
 
-___
+---
 
 ### toPascalCase
 
@@ -50,13 +50,13 @@ collapsing non-alphameric sequences with a single underscore
 **`Example`**
 
 ```ts
-toPascalCase("My friend\n the     1st sharK") // -> MY_FRIEND_THE_1ST_SHARK
+toPascalCase('My friend\n the     1st sharK') // -> MY_FRIEND_THE_1ST_SHARK
 ```
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name  | Type     |
+| :---- | :------- |
 | `str` | `string` |
 
 #### Returns
@@ -67,7 +67,7 @@ toPascalCase("My friend\n the     1st sharK") // -> MY_FRIEND_THE_1ST_SHARK
 
 [src/pure-immutable/string.ts:7](https://github.com/alpinisme/utils/blob/c0860b6/src/pure-immutable/string.ts#L7)
 
-___
+---
 
 ### toSnakeCase
 
@@ -79,13 +79,13 @@ collapsing non-alphameric sequences with a single underscore
 **`Example`**
 
 ```ts
-toPascalCase("My friend\n the     1st sharK") // -> my_friend_the_1st_shark
+toPascalCase('My friend\n the     1st sharK') // -> my_friend_the_1st_shark
 ```
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name  | Type     |
+| :---- | :------- |
 | `str` | `string` |
 
 #### Returns

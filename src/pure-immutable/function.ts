@@ -6,17 +6,17 @@ export function safeInvoke<Fn extends (...args: any[]) => any>(
     return {
       success: true,
       result: fn(...args),
-    };
+    }
   } catch (e) {
     return {
       success: false,
       error: e,
-    };
+    }
   }
 }
 
 export function flipArgs<A, B, C>(fn: (a: A, b: B) => C) {
-  return (b: B, a: A) => fn(a, b);
+  return (b: B, a: A) => fn(a, b)
 }
 
 /**
@@ -26,23 +26,23 @@ export function flipArgs<A, B, C>(fn: (a: A, b: B) => C) {
 export function wrap<T, U>(
   fn: (arg: T) => U,
   wrapper: {
-    before?: (arg: T) => T;
-    after?: (result: U) => U;
+    before?: (arg: T) => T
+    after?: (result: U) => U
   },
 ): (arg: T) => U {
   return (arg) => {
-    let input = arg;
+    let input = arg
 
     if (wrapper.before) {
-      input = wrapper.before(arg);
+      input = wrapper.before(arg)
     }
 
     if (wrapper.after) {
-      return wrapper.after(fn(input));
+      return wrapper.after(fn(input))
     }
 
-    return fn(input);
-  };
+    return fn(input)
+  }
 }
 
 // TODO: partial application would be nice

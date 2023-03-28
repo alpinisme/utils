@@ -17,14 +17,14 @@
 #### Type parameters
 
 | Name |
-| :------ |
-| `T` |
+| :--- |
+| `T`  |
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `arg` | `T` |
+| Name  | Type |
+| :---- | :--- |
+| `arg` | `T`  |
 
 #### Returns
 

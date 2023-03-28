@@ -1,11 +1,11 @@
-import { identity } from './base';
+import { identity } from './base'
 
 export function inRange(value: number, range: { min: number; max: number }) {
-  return value >= range.min && value <= range.max;
+  return value >= range.min && value <= range.max
 }
 
 function stripNaNs(values: number[]) {
-  return values.filter((v) => !Number.isNaN(v));
+  return values.filter((v) => !Number.isNaN(v))
 }
 /**
  * Finds the min and max of the given array.
@@ -14,12 +14,12 @@ export function getBounds(values: number[]) {
   return stripNaNs(values).reduce(
     (bounds, next) => {
       // next must be the falsy result, otherwise initial NaN will win
-      bounds.min = next > bounds.min ? bounds.min : next;
-      bounds.max = next < bounds.max ? bounds.max : next;
-      return bounds;
+      bounds.min = next > bounds.min ? bounds.min : next
+      bounds.max = next < bounds.max ? bounds.max : next
+      return bounds
     },
     { min: NaN, max: NaN },
-  );
+  )
 }
 
 /**
@@ -31,43 +31,43 @@ export function getBoundsBy<T>(values: T[], accessor: (item: T) => number) {
     .reduce(
       (bounds, next) => {
         // next must be the falsy result, otherwise initial NaN will win
-        const val = accessor(next);
-        bounds.min = val > bounds.min ? bounds.min : val;
-        bounds.max = val < bounds.max ? bounds.max : val;
-        return bounds;
+        const val = accessor(next)
+        bounds.min = val > bounds.min ? bounds.min : val
+        bounds.max = val < bounds.max ? bounds.max : val
+        return bounds
       },
       { min: NaN, max: NaN },
-    );
+    )
 }
 
 export function numsFromTo(lowerBound: number, upperBound: number, step = 1) {
-  const result: number[] = [];
-  if (upperBound - lowerBound < 1) return result;
+  const result: number[] = []
+  if (upperBound - lowerBound < 1) return result
 
   for (let i = lowerBound; i <= upperBound; i += step) {
-    result.push(i);
+    result.push(i)
   }
-  return result;
+  return result
 }
 
 export function numsTo(upperBound: number, step = 1) {
-  return numsFromTo(0, upperBound, step);
+  return numsFromTo(0, upperBound, step)
 }
 
 export function sumBy<T>(items: T[], accessor: (item: T) => number) {
-  return items.reduce((sum, next) => sum + accessor(next), 0);
+  return items.reduce((sum, next) => sum + accessor(next), 0)
 }
 
 export function sum(nums: number[]) {
-  return sumBy(nums, identity);
+  return sumBy(nums, identity)
 }
 
 export function avgBy<T>(arr: T[], accessor: (item: T) => number) {
-  return sumBy(arr, accessor) / arr.length;
+  return sumBy(arr, accessor) / arr.length
 }
 
 export function avg(arr: number[]) {
-  return avgBy(arr, identity);
+  return avgBy(arr, identity)
 }
 
 /**
@@ -76,46 +76,46 @@ export function avg(arr: number[]) {
  * To access the matching objects themselves, use findMatches
  */
 export function minBy<T>(arr: T[], accessor: (n: T) => number) {
-  return Math.min(...arr.map(accessor));
+  return Math.min(...arr.map(accessor))
 }
 
 export function min(arr: number[]) {
-  return Math.min(...arr);
+  return Math.min(...arr)
 }
 
 export function maxBy<T>(arr: T[], accessor: (n: T) => number) {
-  return Math.max(...arr.map(accessor));
+  return Math.max(...arr.map(accessor))
 }
 
 export function max(arr: number[]) {
-  return Math.max(...arr);
+  return Math.max(...arr)
 }
 
 export function getRange(values: number[]) {
-  const bounds = getBounds(values);
-  return bounds.max - bounds.min;
+  const bounds = getBounds(values)
+  return bounds.max - bounds.min
 }
 
 export function clamp(value: number, bounds: { min: number; max: number }) {
-  if (bounds.max < value) return bounds.max;
-  if (bounds.min > value) return bounds.min;
-  return value;
+  if (bounds.max < value) return bounds.max
+  if (bounds.min > value) return bounds.min
+  return value
 }
 
 export function variance(values: number[]) {
-  return avg(deviations(values).map((x) => x * x));
+  return avg(deviations(values).map((x) => x * x))
 }
 
 export function stdDev(values: number[]): number {
-  return Math.sqrt(variance(values));
+  return Math.sqrt(variance(values))
 }
 
 export function deviations(values: number[]): number[] {
-  const average = avg(values);
-  return values.map((x) => x - average);
+  const average = avg(values)
+  return values.map((x) => x - average)
 }
 
 export function pctDev(values: number[]): number[] {
-  const average = avg(values);
-  return deviations(values).map((x) => Math.abs(100 * (x / average)));
+  const average = avg(values)
+  return deviations(values).map((x) => Math.abs(100 * (x / average)))
 }

@@ -13,6 +13,7 @@
   "devDependencies": {
     "@vitest/coverage-c8": "^0.29.7",
     "husky": "^8.0.0",
+    "prettier": "^2.8.7",
     "typedoc": "^0.23.28",
     "typedoc-plugin-markdown": "^3.14.0",
     "typescript": "^5.0.2",

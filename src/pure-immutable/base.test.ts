@@ -1,13 +1,13 @@
-import { describe, expect, test } from 'vitest';
-import { isError } from './base';
+import { describe, expect, test } from 'vitest'
+import { isError } from './base'
 
 describe('error', () => {
   test('isError identifies errors correctly', () => {
-    expect(isError(new Error())).toBe(true);
+    expect(isError(new Error())).toBe(true)
     try {
-      throw 'oops';
+      throw 'oops'
     } catch (e) {
-      expect(isError(e)).toBe(false);
+      expect(isError(e)).toBe(false)
     }
-  });
-});
+  })
+})

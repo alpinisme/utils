@@ -42,8 +42,8 @@ represents 500-series http responses
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type       |
+| :--------- | :--------- |
 | `response` | `Response` |
 
 #### Overrides
@@ -68,7 +68,7 @@ represents 500-series http responses
 
 .yarn/cache/typescript-patch-772e75d75e-b63cb742fb.zip/node_modules/typescript/lib/lib.es2022.error.d.ts:24
 
-___
+---
 
 ### message
 
@@ -82,7 +82,7 @@ ___
 
 .yarn/cache/typescript-patch-772e75d75e-b63cb742fb.zip/node_modules/typescript/lib/lib.es5.d.ts:1055
 
-___
+---
 
 ### name
 
@@ -96,7 +96,7 @@ ___
 
 .yarn/cache/typescript-patch-772e75d75e-b63cb742fb.zip/node_modules/typescript/lib/lib.es5.d.ts:1054
 
-___
+---
 
 ### responseText
 
@@ -110,7 +110,7 @@ ___
 
 [src/mutable/http.ts:120](https://github.com/alpinisme/utils/blob/c0860b6/src/mutable/http.ts#L120)
 
-___
+---
 
 ### stack
 
@@ -124,7 +124,7 @@ ___
 
 .yarn/cache/typescript-patch-772e75d75e-b63cb742fb.zip/node_modules/typescript/lib/lib.es5.d.ts:1056
 
-___
+---
 
 ### status
 
@@ -138,7 +138,7 @@ ___
 
 [src/mutable/http.ts:122](https://github.com/alpinisme/utils/blob/c0860b6/src/mutable/http.ts#L122)
 
-___
+---
 
 ### url
 
@@ -152,7 +152,7 @@ ___
 
 [src/mutable/http.ts:121](https://github.com/alpinisme/utils/blob/c0860b6/src/mutable/http.ts#L121)
 
-___
+---
 
 ### prepareStackTrace
 
@@ -170,9 +170,9 @@ https://v8.dev/docs/stack-trace-api#customizing-stack-traces
 
 ##### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `err` | `Error` |
+| Name          | Type         |
+| :------------ | :----------- |
+| `err`         | `Error`      |
 | `stackTraces` | `CallSite`[] |
 
 ##### Returns
@@ -187,7 +187,7 @@ https://v8.dev/docs/stack-trace-api#customizing-stack-traces
 
 .yarn/cache/@types-node-npm-18.15.9-8ef19f541e-5165f84f2f.zip/node_modules/@types/node/globals.d.ts:11
 
-___
+---
 
 ### stackTraceLimit
 
@@ -211,9 +211,9 @@ Create .stack property on a target object
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `targetObject` | `object` |
+| Name              | Type       |
+| :---------------- | :--------- |
+| `targetObject`    | `object`   |
 | `constructorOpt?` | `Function` |
 
 #### Returns

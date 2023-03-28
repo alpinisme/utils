@@ -46,13 +46,13 @@ Beyond that, calendars become significant.
 
 #### Type declaration
 
-| Name | Type |
-| :------ | :------ |
-| `days` | `number` |
-| `hours` | `number` |
+| Name           | Type     |
+| :------------- | :------- |
+| `days`         | `number` |
+| `hours`        | `number` |
 | `milliseconds` | `number` |
-| `minutes` | `number` |
-| `seconds` | `number` |
+| `minutes`      | `number` |
+| `seconds`      | `number` |
 
 #### Defined in
 
@@ -66,8 +66,8 @@ Beyond that, calendars become significant.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type     |
+| :------ | :------- |
 | `count` | `number` |
 
 #### Returns
@@ -78,7 +78,7 @@ Beyond that, calendars become significant.
 
 [src/pure-immutable/date-time.ts:38](https://github.com/alpinisme/utils/blob/c0860b6/src/pure-immutable/date-time.ts#L38)
 
-___
+---
 
 ### fromHours
 
@@ -86,8 +86,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type     |
+| :------ | :------- |
 | `count` | `number` |
 
 #### Returns
@@ -98,7 +98,7 @@ ___
 
 [src/pure-immutable/date-time.ts:35](https://github.com/alpinisme/utils/blob/c0860b6/src/pure-immutable/date-time.ts#L35)
 
-___
+---
 
 ### fromMilliseconds
 
@@ -106,8 +106,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type     |
+| :------ | :------- |
 | `count` | `number` |
 
 #### Returns
@@ -118,7 +118,7 @@ ___
 
 [src/pure-immutable/date-time.ts:26](https://github.com/alpinisme/utils/blob/c0860b6/src/pure-immutable/date-time.ts#L26)
 
-___
+---
 
 ### fromMinutes
 
@@ -126,8 +126,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type     |
+| :------ | :------- |
 | `count` | `number` |
 
 #### Returns
@@ -138,7 +138,7 @@ ___
 
 [src/pure-immutable/date-time.ts:32](https://github.com/alpinisme/utils/blob/c0860b6/src/pure-immutable/date-time.ts#L32)
 
-___
+---
 
 ### fromSeconds
 
@@ -146,8 +146,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type     |
+| :------ | :------- |
 | `count` | `number` |
 
 #### Returns
@@ -158,7 +158,7 @@ ___
 
 [src/pure-immutable/date-time.ts:29](https://github.com/alpinisme/utils/blob/c0860b6/src/pure-immutable/date-time.ts#L29)
 
-___
+---
 
 ### toDays
 
@@ -166,8 +166,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type     |
+| :------ | :------- |
 | `count` | `number` |
 
 #### Returns
@@ -178,7 +178,7 @@ ___
 
 [src/pure-immutable/date-time.ts:54](https://github.com/alpinisme/utils/blob/c0860b6/src/pure-immutable/date-time.ts#L54)
 
-___
+---
 
 ### toHours
 
@@ -186,8 +186,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type     |
+| :------ | :------- |
 | `count` | `number` |
 
 #### Returns
@@ -198,7 +198,7 @@ ___
 
 [src/pure-immutable/date-time.ts:51](https://github.com/alpinisme/utils/blob/c0860b6/src/pure-immutable/date-time.ts#L51)
 
-___
+---
 
 ### toMilliseconds
 
@@ -206,8 +206,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type     |
+| :------ | :------- |
 | `count` | `number` |
 
 #### Returns
@@ -218,7 +218,7 @@ ___
 
 [src/pure-immutable/date-time.ts:42](https://github.com/alpinisme/utils/blob/c0860b6/src/pure-immutable/date-time.ts#L42)
 
-___
+---
 
 ### toMinutes
 
@@ -226,8 +226,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type     |
+| :------ | :------- |
 | `count` | `number` |
 
 #### Returns
@@ -238,7 +238,7 @@ ___
 
 [src/pure-immutable/date-time.ts:48](https://github.com/alpinisme/utils/blob/c0860b6/src/pure-immutable/date-time.ts#L48)
 
-___
+---
 
 ### toSeconds
 
@@ -246,8 +246,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type     |
+| :------ | :------- |
 | `count` | `number` |
 
 #### Returns

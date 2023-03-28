@@ -1,18 +1,18 @@
-import { toString } from './base';
+import { toString } from './base'
 
-const { entries, fromEntries } = Object;
+const { entries, fromEntries } = Object
 
 export function isMatch<T extends Record<string, any>>(
   checked: T,
   comparator: Partial<T>,
 ): Boolean {
-  return entries(comparator).every(([key, value]) => checked[key] === value);
+  return entries(comparator).every(([key, value]) => checked[key] === value)
 }
 
 export function createMatcher<T extends Record<string, any>>(
   comparator: Partial<T>,
 ): (checked: T) => Boolean {
-  return (checked) => isMatch(checked, comparator);
+  return (checked) => isMatch(checked, comparator)
 }
 
 export function pick<T extends Record<string, any>, Keys extends (keyof T)[]>(
@@ -22,7 +22,7 @@ export function pick<T extends Record<string, any>, Keys extends (keyof T)[]>(
   return fromEntries(entries(item).filter(([key]) => keys.map(toString).includes(key))) as Pick<
     T,
     Keys[number]
-  >;
+  >
 }
 
 export function omit<T extends Record<string, any>, Keys extends (keyof T)[]>(
@@ -32,5 +32,5 @@ export function omit<T extends Record<string, any>, Keys extends (keyof T)[]>(
   return fromEntries(entries(item).filter(([key]) => !keys.map(toString).includes(key))) as Omit<
     T,
     Keys[number]
-  >;
+  >
 }

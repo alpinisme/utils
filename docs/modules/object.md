@@ -19,14 +19,14 @@
 
 #### Type parameters
 
-| Name | Type |
-| :------ | :------ |
-| `T` | extends `Record`<`string`, `any`\> |
+| Name | Type                               |
+| :--- | :--------------------------------- |
+| `T`  | extends `Record`<`string`, `any`\> |
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name         | Type            |
+| :----------- | :-------------- |
 | `comparator` | `Partial`<`T`\> |
 
 #### Returns
@@ -37,9 +37,9 @@
 
 ##### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `checked` | `T` |
+| Name      | Type |
+| :-------- | :--- |
+| `checked` | `T`  |
 
 ##### Returns
 
@@ -49,7 +49,7 @@
 
 [src/pure-immutable/object.ts:12](https://github.com/alpinisme/utils/blob/c0860b6/src/pure-immutable/object.ts#L12)
 
-___
+---
 
 ### isMatch
 
@@ -57,15 +57,15 @@ ___
 
 #### Type parameters
 
-| Name | Type |
-| :------ | :------ |
-| `T` | extends `Record`<`string`, `any`\> |
+| Name | Type                               |
+| :--- | :--------------------------------- |
+| `T`  | extends `Record`<`string`, `any`\> |
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `checked` | `T` |
+| Name         | Type            |
+| :----------- | :-------------- |
+| `checked`    | `T`             |
 | `comparator` | `Partial`<`T`\> |
 
 #### Returns
@@ -76,7 +76,7 @@ ___
 
 [src/pure-immutable/object.ts:5](https://github.com/alpinisme/utils/blob/c0860b6/src/pure-immutable/object.ts#L5)
 
-___
+---
 
 ### omit
 
@@ -84,17 +84,17 @@ ___
 
 #### Type parameters
 
-| Name | Type |
-| :------ | :------ |
-| `T` | extends `Record`<`string`, `any`\> |
-| `Keys` | extends keyof `T`[] |
+| Name   | Type                               |
+| :----- | :--------------------------------- |
+| `T`    | extends `Record`<`string`, `any`\> |
+| `Keys` | extends keyof `T`[]                |
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name   | Type   |
+| :----- | :----- |
 | `keys` | `Keys` |
-| `item` | `T` |
+| `item` | `T`    |
 
 #### Returns
 
@@ -104,7 +104,7 @@ ___
 
 [src/pure-immutable/object.ts:28](https://github.com/alpinisme/utils/blob/c0860b6/src/pure-immutable/object.ts#L28)
 
-___
+---
 
 ### pick
 
@@ -112,17 +112,17 @@ ___
 
 #### Type parameters
 
-| Name | Type |
-| :------ | :------ |
-| `T` | extends `Record`<`string`, `any`\> |
-| `Keys` | extends keyof `T`[] |
+| Name   | Type                               |
+| :----- | :--------------------------------- |
+| `T`    | extends `Record`<`string`, `any`\> |
+| `Keys` | extends keyof `T`[]                |
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name   | Type   |
+| :----- | :----- |
 | `keys` | `Keys` |
-| `item` | `T` |
+| `item` | `T`    |
 
 #### Returns
 

@@ -34,8 +34,8 @@
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name  | Type       |
+| :---- | :--------- |
 | `arr` | `number`[] |
 
 #### Returns
@@ -46,7 +46,7 @@
 
 [src/pure-immutable/number.ts:69](https://github.com/alpinisme/utils/blob/c0860b6/src/pure-immutable/number.ts#L69)
 
-___
+---
 
 ### avgBy
 
@@ -55,14 +55,14 @@ ___
 #### Type parameters
 
 | Name |
-| :------ |
-| `T` |
+| :--- |
+| `T`  |
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `arr` | `T`[] |
+| Name       | Type                      |
+| :--------- | :------------------------ |
+| `arr`      | `T`[]                     |
 | `accessor` | (`item`: `T`) => `number` |
 
 #### Returns
@@ -73,7 +73,7 @@ ___
 
 [src/pure-immutable/number.ts:65](https://github.com/alpinisme/utils/blob/c0860b6/src/pure-immutable/number.ts#L65)
 
-___
+---
 
 ### clamp
 
@@ -81,10 +81,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `value` | `number` |
-| `bounds` | `Object` |
+| Name         | Type     |
+| :----------- | :------- |
+| `value`      | `number` |
+| `bounds`     | `Object` |
 | `bounds.max` | `number` |
 | `bounds.min` | `number` |
 
@@ -96,7 +96,7 @@ ___
 
 [src/pure-immutable/number.ts:99](https://github.com/alpinisme/utils/blob/c0860b6/src/pure-immutable/number.ts#L99)
 
-___
+---
 
 ### deviations
 
@@ -104,8 +104,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name     | Type       |
+| :------- | :--------- |
 | `values` | `number`[] |
 
 #### Returns
@@ -116,7 +116,7 @@ ___
 
 [src/pure-immutable/number.ts:113](https://github.com/alpinisme/utils/blob/c0860b6/src/pure-immutable/number.ts#L113)
 
-___
+---
 
 ### getBounds
 
@@ -126,16 +126,16 @@ Finds the min and max of the given array.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name     | Type       |
+| :------- | :--------- |
 | `values` | `number`[] |
 
 #### Returns
 
 `Object`
 
-| Name | Type |
-| :------ | :------ |
+| Name  | Type     |
+| :---- | :------- |
 | `max` | `number` |
 | `min` | `number` |
 
@@ -143,7 +143,7 @@ Finds the min and max of the given array.
 
 [src/pure-immutable/number.ts:13](https://github.com/alpinisme/utils/blob/c0860b6/src/pure-immutable/number.ts#L13)
 
-___
+---
 
 ### getBoundsBy
 
@@ -154,22 +154,22 @@ Finds the min and max of the given array, using the accessor.
 #### Type parameters
 
 | Name |
-| :------ |
-| `T` |
+| :--- |
+| `T`  |
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `values` | `T`[] |
+| Name       | Type                      |
+| :--------- | :------------------------ |
+| `values`   | `T`[]                     |
 | `accessor` | (`item`: `T`) => `number` |
 
 #### Returns
 
 `Object`
 
-| Name | Type |
-| :------ | :------ |
+| Name  | Type     |
+| :---- | :------- |
 | `max` | `number` |
 | `min` | `number` |
 
@@ -177,7 +177,7 @@ Finds the min and max of the given array, using the accessor.
 
 [src/pure-immutable/number.ts:28](https://github.com/alpinisme/utils/blob/c0860b6/src/pure-immutable/number.ts#L28)
 
-___
+---
 
 ### getRange
 
@@ -185,8 +185,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name     | Type       |
+| :------- | :--------- |
 | `values` | `number`[] |
 
 #### Returns
@@ -197,7 +197,7 @@ ___
 
 [src/pure-immutable/number.ts:94](https://github.com/alpinisme/utils/blob/c0860b6/src/pure-immutable/number.ts#L94)
 
-___
+---
 
 ### inRange
 
@@ -205,10 +205,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `value` | `number` |
-| `range` | `Object` |
+| Name        | Type     |
+| :---------- | :------- |
+| `value`     | `number` |
+| `range`     | `Object` |
 | `range.max` | `number` |
 | `range.min` | `number` |
 
@@ -220,7 +220,7 @@ ___
 
 [src/pure-immutable/number.ts:3](https://github.com/alpinisme/utils/blob/c0860b6/src/pure-immutable/number.ts#L3)
 
-___
+---
 
 ### max
 
@@ -228,8 +228,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name  | Type       |
+| :---- | :--------- |
 | `arr` | `number`[] |
 
 #### Returns
@@ -240,7 +240,7 @@ ___
 
 [src/pure-immutable/number.ts:90](https://github.com/alpinisme/utils/blob/c0860b6/src/pure-immutable/number.ts#L90)
 
-___
+---
 
 ### maxBy
 
@@ -249,14 +249,14 @@ ___
 #### Type parameters
 
 | Name |
-| :------ |
-| `T` |
+| :--- |
+| `T`  |
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `arr` | `T`[] |
+| Name       | Type                   |
+| :--------- | :--------------------- |
+| `arr`      | `T`[]                  |
 | `accessor` | (`n`: `T`) => `number` |
 
 #### Returns
@@ -267,7 +267,7 @@ ___
 
 [src/pure-immutable/number.ts:86](https://github.com/alpinisme/utils/blob/c0860b6/src/pure-immutable/number.ts#L86)
 
-___
+---
 
 ### min
 
@@ -275,8 +275,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name  | Type       |
+| :---- | :--------- |
 | `arr` | `number`[] |
 
 #### Returns
@@ -287,7 +287,7 @@ ___
 
 [src/pure-immutable/number.ts:82](https://github.com/alpinisme/utils/blob/c0860b6/src/pure-immutable/number.ts#L82)
 
-___
+---
 
 ### minBy
 
@@ -300,14 +300,14 @@ To access the matching objects themselves, use findMatches
 #### Type parameters
 
 | Name |
-| :------ |
-| `T` |
+| :--- |
+| `T`  |
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `arr` | `T`[] |
+| Name       | Type                   |
+| :--------- | :--------------------- |
+| `arr`      | `T`[]                  |
 | `accessor` | (`n`: `T`) => `number` |
 
 #### Returns
@@ -318,7 +318,7 @@ To access the matching objects themselves, use findMatches
 
 [src/pure-immutable/number.ts:78](https://github.com/alpinisme/utils/blob/c0860b6/src/pure-immutable/number.ts#L78)
 
-___
+---
 
 ### numsFromTo
 
@@ -326,11 +326,11 @@ ___
 
 #### Parameters
 
-| Name | Type | Default value |
-| :------ | :------ | :------ |
-| `lowerBound` | `number` | `undefined` |
-| `upperBound` | `number` | `undefined` |
-| `step` | `number` | `1` |
+| Name         | Type     | Default value |
+| :----------- | :------- | :------------ |
+| `lowerBound` | `number` | `undefined`   |
+| `upperBound` | `number` | `undefined`   |
+| `step`       | `number` | `1`           |
 
 #### Returns
 
@@ -340,7 +340,7 @@ ___
 
 [src/pure-immutable/number.ts:43](https://github.com/alpinisme/utils/blob/c0860b6/src/pure-immutable/number.ts#L43)
 
-___
+---
 
 ### numsTo
 
@@ -348,10 +348,10 @@ ___
 
 #### Parameters
 
-| Name | Type | Default value |
-| :------ | :------ | :------ |
-| `upperBound` | `number` | `undefined` |
-| `step` | `number` | `1` |
+| Name         | Type     | Default value |
+| :----------- | :------- | :------------ |
+| `upperBound` | `number` | `undefined`   |
+| `step`       | `number` | `1`           |
 
 #### Returns
 
@@ -361,7 +361,7 @@ ___
 
 [src/pure-immutable/number.ts:53](https://github.com/alpinisme/utils/blob/c0860b6/src/pure-immutable/number.ts#L53)
 
-___
+---
 
 ### pctDev
 
@@ -369,8 +369,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name     | Type       |
+| :------- | :--------- |
 | `values` | `number`[] |
 
 #### Returns
@@ -381,7 +381,7 @@ ___
 
 [src/pure-immutable/number.ts:118](https://github.com/alpinisme/utils/blob/c0860b6/src/pure-immutable/number.ts#L118)
 
-___
+---
 
 ### stdDev
 
@@ -389,8 +389,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name     | Type       |
+| :------- | :--------- |
 | `values` | `number`[] |
 
 #### Returns
@@ -401,7 +401,7 @@ ___
 
 [src/pure-immutable/number.ts:109](https://github.com/alpinisme/utils/blob/c0860b6/src/pure-immutable/number.ts#L109)
 
-___
+---
 
 ### sum
 
@@ -409,8 +409,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name   | Type       |
+| :----- | :--------- |
 | `nums` | `number`[] |
 
 #### Returns
@@ -421,7 +421,7 @@ ___
 
 [src/pure-immutable/number.ts:61](https://github.com/alpinisme/utils/blob/c0860b6/src/pure-immutable/number.ts#L61)
 
-___
+---
 
 ### sumBy
 
@@ -430,14 +430,14 @@ ___
 #### Type parameters
 
 | Name |
-| :------ |
-| `T` |
+| :--- |
+| `T`  |
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `items` | `T`[] |
+| Name       | Type                      |
+| :--------- | :------------------------ |
+| `items`    | `T`[]                     |
 | `accessor` | (`item`: `T`) => `number` |
 
 #### Returns
@@ -448,7 +448,7 @@ ___
 
 [src/pure-immutable/number.ts:57](https://github.com/alpinisme/utils/blob/c0860b6/src/pure-immutable/number.ts#L57)
 
-___
+---
 
 ### variance
 
@@ -456,8 +456,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name     | Type       |
+| :------- | :--------- |
 | `values` | `number`[] |
 
 #### Returns
