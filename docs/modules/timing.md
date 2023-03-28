@@ -26,4 +26,4 @@
 
 #### Defined in
 
-[src/impure-immutable/timing.ts:1](https://github.com/alpinisme/utils/blob/dc5e134/src/impure-immutable/timing.ts#L1)
+[src/impure-immutable/timing.ts:1](https://github.com/alpinisme/utils/blob/5571690/src/impure-immutable/timing.ts#L1)

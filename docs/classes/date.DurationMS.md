@@ -1,8 +1,8 @@
-[utils](../README.md) / [Exports](../modules.md) / [date](../modules/date.md) / DurationMS
+[utils](../README.md) / [Exports](../modules.md) / [date](../modules/date.md) / DurationMs
 
-# Class: DurationMS
+# Class: DurationMs
 
-[date](../modules/date.md).DurationMS
+[date](../modules/date.md).DurationMs
 
 Helper class for converting durations to and from milliseconds
 
@@ -13,30 +13,30 @@ Beyond that, calendars become significant.
 
 ### Constructors
 
-- [constructor](date.DurationMS.md#constructor)
+- [constructor](date.DurationMs.md#constructor)
 
 ### Properties
 
-- [multiplier](date.DurationMS.md#multiplier)
+- [multiplier](date.DurationMs.md#multiplier)
 
 ### Methods
 
-- [fromDays](date.DurationMS.md#fromdays)
-- [fromHours](date.DurationMS.md#fromhours)
-- [fromMilliseconds](date.DurationMS.md#frommilliseconds)
-- [fromMinutes](date.DurationMS.md#fromminutes)
-- [fromSeconds](date.DurationMS.md#fromseconds)
-- [toDays](date.DurationMS.md#todays)
-- [toHours](date.DurationMS.md#tohours)
-- [toMilliseconds](date.DurationMS.md#tomilliseconds)
-- [toMinutes](date.DurationMS.md#tominutes)
-- [toSeconds](date.DurationMS.md#toseconds)
+- [fromDays](date.DurationMs.md#fromdays)
+- [fromHours](date.DurationMs.md#fromhours)
+- [fromMilliseconds](date.DurationMs.md#frommilliseconds)
+- [fromMinutes](date.DurationMs.md#fromminutes)
+- [fromSeconds](date.DurationMs.md#fromseconds)
+- [toDays](date.DurationMs.md#todays)
+- [toHours](date.DurationMs.md#tohours)
+- [toMilliseconds](date.DurationMs.md#tomilliseconds)
+- [toMinutes](date.DurationMs.md#tominutes)
+- [toSeconds](date.DurationMs.md#toseconds)
 
 ## Constructors
 
 ### constructor
 
-• **new DurationMS**()
+• **new DurationMs**()
 
 ## Properties
 
@@ -56,7 +56,7 @@ Beyond that, calendars become significant.
 
 #### Defined in
 
-[src/pure-immutable/date-time.ts:18](https://github.com/alpinisme/utils/blob/dc5e134/src/pure-immutable/date-time.ts#L18)
+[src/pure-immutable/date-time.ts:18](https://github.com/alpinisme/utils/blob/5571690/src/pure-immutable/date-time.ts#L18)
 
 ## Methods
 
@@ -76,7 +76,7 @@ Beyond that, calendars become significant.
 
 #### Defined in
 
-[src/pure-immutable/date-time.ts:38](https://github.com/alpinisme/utils/blob/dc5e134/src/pure-immutable/date-time.ts#L38)
+[src/pure-immutable/date-time.ts:38](https://github.com/alpinisme/utils/blob/5571690/src/pure-immutable/date-time.ts#L38)
 
 ___
 
@@ -96,7 +96,7 @@ ___
 
 #### Defined in
 
-[src/pure-immutable/date-time.ts:35](https://github.com/alpinisme/utils/blob/dc5e134/src/pure-immutable/date-time.ts#L35)
+[src/pure-immutable/date-time.ts:35](https://github.com/alpinisme/utils/blob/5571690/src/pure-immutable/date-time.ts#L35)
 
 ___
 
@@ -116,7 +116,7 @@ ___
 
 #### Defined in
 
-[src/pure-immutable/date-time.ts:26](https://github.com/alpinisme/utils/blob/dc5e134/src/pure-immutable/date-time.ts#L26)
+[src/pure-immutable/date-time.ts:26](https://github.com/alpinisme/utils/blob/5571690/src/pure-immutable/date-time.ts#L26)
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-[src/pure-immutable/date-time.ts:32](https://github.com/alpinisme/utils/blob/dc5e134/src/pure-immutable/date-time.ts#L32)
+[src/pure-immutable/date-time.ts:32](https://github.com/alpinisme/utils/blob/5571690/src/pure-immutable/date-time.ts#L32)
 
 ___
 
@@ -156,7 +156,7 @@ ___
 
 #### Defined in
 
-[src/pure-immutable/date-time.ts:29](https://github.com/alpinisme/utils/blob/dc5e134/src/pure-immutable/date-time.ts#L29)
+[src/pure-immutable/date-time.ts:29](https://github.com/alpinisme/utils/blob/5571690/src/pure-immutable/date-time.ts#L29)
 
 ___
 
@@ -176,7 +176,7 @@ ___
 
 #### Defined in
 
-[src/pure-immutable/date-time.ts:54](https://github.com/alpinisme/utils/blob/dc5e134/src/pure-immutable/date-time.ts#L54)
+[src/pure-immutable/date-time.ts:54](https://github.com/alpinisme/utils/blob/5571690/src/pure-immutable/date-time.ts#L54)
 
 ___
 
@@ -196,7 +196,7 @@ ___
 
 #### Defined in
 
-[src/pure-immutable/date-time.ts:51](https://github.com/alpinisme/utils/blob/dc5e134/src/pure-immutable/date-time.ts#L51)
+[src/pure-immutable/date-time.ts:51](https://github.com/alpinisme/utils/blob/5571690/src/pure-immutable/date-time.ts#L51)
 
 ___
 
@@ -216,7 +216,7 @@ ___
 
 #### Defined in
 
-[src/pure-immutable/date-time.ts:42](https://github.com/alpinisme/utils/blob/dc5e134/src/pure-immutable/date-time.ts#L42)
+[src/pure-immutable/date-time.ts:42](https://github.com/alpinisme/utils/blob/5571690/src/pure-immutable/date-time.ts#L42)
 
 ___
 
@@ -236,7 +236,7 @@ ___
 
 #### Defined in
 
-[src/pure-immutable/date-time.ts:48](https://github.com/alpinisme/utils/blob/dc5e134/src/pure-immutable/date-time.ts#L48)
+[src/pure-immutable/date-time.ts:48](https://github.com/alpinisme/utils/blob/5571690/src/pure-immutable/date-time.ts#L48)
 
 ___
 
@@ -256,4 +256,4 @@ ___
 
 #### Defined in
 
-[src/pure-immutable/date-time.ts:45](https://github.com/alpinisme/utils/blob/dc5e134/src/pure-immutable/date-time.ts#L45)
+[src/pure-immutable/date-time.ts:45](https://github.com/alpinisme/utils/blob/5571690/src/pure-immutable/date-time.ts#L45)
