@@ -38,7 +38,8 @@ export class ApiClient {
   /**
    * GET `path` at base url.
    *
-   * @throws `ApiError` if response not ok
+   * @throws {@link ClientSideApiError} if response in 400-series
+   * @throws {@link ServerSideApiError} if response in 500-series
    * @example get('/account/1234')
    */
   async get(path: string) {
@@ -48,7 +49,8 @@ export class ApiClient {
   /**
    * POST `path` at base url with optional body .
    *
-   * @throws `ApiError` if response not ok
+   * @throws {@link ClientSideApiError} if response in 400-series
+   * @throws {@link ServerSideApiError} if response in 500-series
    * @example post('/account/1234', {username: 'pinocchio', dream: 'becoming a human boy'})
    */
   async post(path: string, body: any) {
@@ -58,7 +60,8 @@ export class ApiClient {
   /**
    * PUT `path` at base url with optional body .
    *
-   * @throws `ApiError` if response not ok
+   * @throws {@link ClientSideApiError} if response in 400-series
+   * @throws {@link ServerSideApiError} if response in 500-series
    * @example put('/account/1234', {username: 'jeeves'})
    */
   async put(path: string, body?: any) {
@@ -68,7 +71,8 @@ export class ApiClient {
   /**
    * DELETE `path` at base url.
    *
-   * @throws `ApiError` if response not ok
+   * @throws {@link ClientSideApiError} if response in 400-series
+   * @throws {@link ServerSideApiError} if response in 500-series
    * @example get('/account/123/')
    */
   async delete(path: string) {

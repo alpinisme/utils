@@ -12,5 +12,3 @@ export * from './object';
 export * as object from './object';
 export * from './string';
 export * as string from './string';
-
-//
