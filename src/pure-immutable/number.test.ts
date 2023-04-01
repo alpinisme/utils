@@ -70,11 +70,17 @@ describe('enumerating a range', () => {
   })
 
   test('numsTo allows a second argument to specify step size', () => {
-    expect(numsTo(10, 2)).toEqual([0, 2, 4, 6, 8, 10])
+    expect(numsTo(10, { interval: 2 })).toEqual([0, 2, 4, 6, 8, 10])
   })
 
   test('numsFromTo allows a starting offset', () => {
-    expect(numsFromTo(10, 100, 10)).toEqual([10, 20, 30, 40, 50, 60, 70, 80, 90, 100])
+    expect(numsFromTo(10, 100, { interval: 10 })).toEqual([10, 20, 30, 40, 50, 60, 70, 80, 90, 100])
+  })
+
+  test('numsFromTo allows a decimal interval', () => {
+    expect(numsFromTo(0, 1, { interval: 0.2 }).map((x) => x.toFixed(8))).toEqual(
+      [0, 0.2, 0.4, 0.6, 0.8, 1].map((x) => x.toFixed(8)),
+    )
   })
 
   test('numsFromTo returns empty array if impossible request', () => {
@@ -82,7 +88,7 @@ describe('enumerating a range', () => {
   })
 
   test('numsFromTo just returns lower bound if step higher than distance to upper', () => {
-    expect(numsFromTo(10, 100, 100)).toEqual([10])
+    expect(numsFromTo(10, 100, { interval: 100 })).toEqual([10])
   })
 })
 

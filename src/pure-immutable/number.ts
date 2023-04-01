@@ -40,18 +40,26 @@ export function getBoundsBy<T>(values: T[], accessor: (item: T) => number) {
     )
 }
 
-export function numsFromTo(lowerBound: number, upperBound: number, step = 1) {
-  const result: number[] = []
-  if (upperBound - lowerBound < 1) return result
+export const numsFromTo = (
+  lowerBound: number,
+  upperBound: number,
+  { interval }: { interval: number } = { interval: 1 },
+) => {
+  const range = upperBound - lowerBound
+  const length = 1 + range / interval
 
-  for (let i = lowerBound; i <= upperBound; i += step) {
-    result.push(i)
-  }
-  return result
+  return Array.from({ length }, (_, i) => lowerBound + i * interval)
 }
 
-export function numsTo(upperBound: number, step = 1) {
-  return numsFromTo(0, upperBound, step)
+export function numsTo(
+  upperBound: number,
+  {
+    interval,
+  }: {
+    interval: number
+  } = { interval: 1 },
+) {
+  return numsFromTo(0, upperBound, { interval })
 }
 
 export function sumBy<T>(items: T[], accessor: (item: T) => number) {
