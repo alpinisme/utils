@@ -1,6 +1,6 @@
 {
   "name": "utils",
-  "packageManager": "yarn@3.5.0",
+  "packageManager": "yarn@3.6.3",
   "author": "Matt Nelson",
   "private": true,
   "scripts": {
@@ -19,5 +19,8 @@
     "typescript": "^5.2.2",
     "vite": "^4.4.9",
     "vitest": "^0.34.3"
+  },
+  "dependencies": {
+    "fast-check": "^3.12.0"
   }
 }
