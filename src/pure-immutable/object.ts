@@ -133,6 +133,10 @@ export function filterMapKeys<T extends {}>(obj: T, mapFn: (key: keyof T) => str
  * Given a keyMap object that maps old keys to new keys, copy an object over
  * using the new keys and dropping any properties that are unmapped.
  *
+ * Note that the generic type must be specified at the call site to get best type results,
+ * since otherwise TypeScript may infer `never` for properties that did not exist on original obj.
+ * This isn't an unsafe coercion, just helping TypeScript narrow the generic correctly.
+ *
  * @example
  * const obj = {a: 1, b: 2}
  * const keyMap = {a: 'alpha'}
