@@ -13,7 +13,6 @@
     "moduleResolution": "node",
     "forceConsistentCasingInFileNames": true,
     "importHelpers": true,
-    "types": ["vitest/globals"]
   },
   "include": ["src"],
   "exclude": ["node_modules", "src/**/*.test.ts", "src/**/*.temp.ts"]

@@ -1,4 +1,4 @@
-import { describe, expect, expectTypeOf, test } from 'vitest'
+import { assertType, describe, expect, expectTypeOf, test } from 'vitest'
 import { has, isMatch, omit, pick } from './object'
 
 describe('picking and omitting', () => {
