@@ -44,7 +44,7 @@
 
 #### Defined in
 
-[src/pure-immutable/number.ts:69](https://github.com/alpinisme/utils/blob/5571690/src/pure-immutable/number.ts#L69)
+[src/pure-immutable/number.ts:130](https://github.com/alpinisme/utils/blob/08ceb73/src/pure-immutable/number.ts#L130)
 
 ___
 
@@ -71,7 +71,7 @@ ___
 
 #### Defined in
 
-[src/pure-immutable/number.ts:65](https://github.com/alpinisme/utils/blob/5571690/src/pure-immutable/number.ts#L65)
+[src/pure-immutable/number.ts:126](https://github.com/alpinisme/utils/blob/08ceb73/src/pure-immutable/number.ts#L126)
 
 ___
 
@@ -94,7 +94,7 @@ ___
 
 #### Defined in
 
-[src/pure-immutable/number.ts:99](https://github.com/alpinisme/utils/blob/5571690/src/pure-immutable/number.ts#L99)
+[src/pure-immutable/number.ts:160](https://github.com/alpinisme/utils/blob/08ceb73/src/pure-immutable/number.ts#L160)
 
 ___
 
@@ -114,7 +114,7 @@ ___
 
 #### Defined in
 
-[src/pure-immutable/number.ts:113](https://github.com/alpinisme/utils/blob/5571690/src/pure-immutable/number.ts#L113)
+[src/pure-immutable/number.ts:174](https://github.com/alpinisme/utils/blob/08ceb73/src/pure-immutable/number.ts#L174)
 
 ___
 
@@ -141,7 +141,7 @@ Finds the min and max of the given array.
 
 #### Defined in
 
-[src/pure-immutable/number.ts:13](https://github.com/alpinisme/utils/blob/5571690/src/pure-immutable/number.ts#L13)
+[src/pure-immutable/number.ts:13](https://github.com/alpinisme/utils/blob/08ceb73/src/pure-immutable/number.ts#L13)
 
 ___
 
@@ -175,7 +175,7 @@ Finds the min and max of the given array, using the accessor.
 
 #### Defined in
 
-[src/pure-immutable/number.ts:28](https://github.com/alpinisme/utils/blob/5571690/src/pure-immutable/number.ts#L28)
+[src/pure-immutable/number.ts:81](https://github.com/alpinisme/utils/blob/08ceb73/src/pure-immutable/number.ts#L81)
 
 ___
 
@@ -195,7 +195,7 @@ ___
 
 #### Defined in
 
-[src/pure-immutable/number.ts:94](https://github.com/alpinisme/utils/blob/5571690/src/pure-immutable/number.ts#L94)
+[src/pure-immutable/number.ts:155](https://github.com/alpinisme/utils/blob/08ceb73/src/pure-immutable/number.ts#L155)
 
 ___
 
@@ -218,7 +218,7 @@ ___
 
 #### Defined in
 
-[src/pure-immutable/number.ts:3](https://github.com/alpinisme/utils/blob/5571690/src/pure-immutable/number.ts#L3)
+[src/pure-immutable/number.ts:3](https://github.com/alpinisme/utils/blob/08ceb73/src/pure-immutable/number.ts#L3)
 
 ___
 
@@ -238,7 +238,7 @@ ___
 
 #### Defined in
 
-[src/pure-immutable/number.ts:90](https://github.com/alpinisme/utils/blob/5571690/src/pure-immutable/number.ts#L90)
+[src/pure-immutable/number.ts:151](https://github.com/alpinisme/utils/blob/08ceb73/src/pure-immutable/number.ts#L151)
 
 ___
 
@@ -265,7 +265,7 @@ ___
 
 #### Defined in
 
-[src/pure-immutable/number.ts:86](https://github.com/alpinisme/utils/blob/5571690/src/pure-immutable/number.ts#L86)
+[src/pure-immutable/number.ts:147](https://github.com/alpinisme/utils/blob/08ceb73/src/pure-immutable/number.ts#L147)
 
 ___
 
@@ -285,7 +285,7 @@ ___
 
 #### Defined in
 
-[src/pure-immutable/number.ts:82](https://github.com/alpinisme/utils/blob/5571690/src/pure-immutable/number.ts#L82)
+[src/pure-immutable/number.ts:143](https://github.com/alpinisme/utils/blob/08ceb73/src/pure-immutable/number.ts#L143)
 
 ___
 
@@ -316,21 +316,22 @@ To access the matching objects themselves, use findMatches
 
 #### Defined in
 
-[src/pure-immutable/number.ts:78](https://github.com/alpinisme/utils/blob/5571690/src/pure-immutable/number.ts#L78)
+[src/pure-immutable/number.ts:139](https://github.com/alpinisme/utils/blob/08ceb73/src/pure-immutable/number.ts#L139)
 
 ___
 
 ### numsFromTo
 
-▸ **numsFromTo**(`lowerBound`, `upperBound`, `step?`): `number`[]
+▸ **numsFromTo**(`lowerBound`, `upperBound`, `«destructured»?`): `number`[]
 
 #### Parameters
 
-| Name | Type | Default value |
-| :------ | :------ | :------ |
-| `lowerBound` | `number` | `undefined` |
-| `upperBound` | `number` | `undefined` |
-| `step` | `number` | `1` |
+| Name | Type |
+| :------ | :------ |
+| `lowerBound` | `number` |
+| `upperBound` | `number` |
+| `«destructured»` | `Object` |
+| › `interval` | `number` |
 
 #### Returns
 
@@ -338,20 +339,21 @@ ___
 
 #### Defined in
 
-[src/pure-immutable/number.ts:43](https://github.com/alpinisme/utils/blob/5571690/src/pure-immutable/number.ts#L43)
+[src/pure-immutable/number.ts:96](https://github.com/alpinisme/utils/blob/08ceb73/src/pure-immutable/number.ts#L96)
 
 ___
 
 ### numsTo
 
-▸ **numsTo**(`upperBound`, `step?`): `number`[]
+▸ **numsTo**(`upperBound`, `«destructured»?`): `number`[]
 
 #### Parameters
 
-| Name | Type | Default value |
-| :------ | :------ | :------ |
-| `upperBound` | `number` | `undefined` |
-| `step` | `number` | `1` |
+| Name | Type |
+| :------ | :------ |
+| `upperBound` | `number` |
+| `«destructured»` | `Object` |
+| › `interval` | `number` |
 
 #### Returns
 
@@ -359,7 +361,7 @@ ___
 
 #### Defined in
 
-[src/pure-immutable/number.ts:53](https://github.com/alpinisme/utils/blob/5571690/src/pure-immutable/number.ts#L53)
+[src/pure-immutable/number.ts:107](https://github.com/alpinisme/utils/blob/08ceb73/src/pure-immutable/number.ts#L107)
 
 ___
 
@@ -379,7 +381,7 @@ ___
 
 #### Defined in
 
-[src/pure-immutable/number.ts:118](https://github.com/alpinisme/utils/blob/5571690/src/pure-immutable/number.ts#L118)
+[src/pure-immutable/number.ts:179](https://github.com/alpinisme/utils/blob/08ceb73/src/pure-immutable/number.ts#L179)
 
 ___
 
@@ -399,7 +401,7 @@ ___
 
 #### Defined in
 
-[src/pure-immutable/number.ts:109](https://github.com/alpinisme/utils/blob/5571690/src/pure-immutable/number.ts#L109)
+[src/pure-immutable/number.ts:170](https://github.com/alpinisme/utils/blob/08ceb73/src/pure-immutable/number.ts#L170)
 
 ___
 
@@ -419,7 +421,7 @@ ___
 
 #### Defined in
 
-[src/pure-immutable/number.ts:61](https://github.com/alpinisme/utils/blob/5571690/src/pure-immutable/number.ts#L61)
+[src/pure-immutable/number.ts:122](https://github.com/alpinisme/utils/blob/08ceb73/src/pure-immutable/number.ts#L122)
 
 ___
 
@@ -446,7 +448,7 @@ ___
 
 #### Defined in
 
-[src/pure-immutable/number.ts:57](https://github.com/alpinisme/utils/blob/5571690/src/pure-immutable/number.ts#L57)
+[src/pure-immutable/number.ts:118](https://github.com/alpinisme/utils/blob/08ceb73/src/pure-immutable/number.ts#L118)
 
 ___
 
@@ -466,4 +468,4 @@ ___
 
 #### Defined in
 
-[src/pure-immutable/number.ts:105](https://github.com/alpinisme/utils/blob/5571690/src/pure-immutable/number.ts#L105)
+[src/pure-immutable/number.ts:166](https://github.com/alpinisme/utils/blob/08ceb73/src/pure-immutable/number.ts#L166)

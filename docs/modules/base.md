@@ -8,6 +8,8 @@
 
 - [identity](base.md#identity)
 - [isError](base.md#iserror)
+- [isNonNull](base.md#isnonnull)
+- [isNull](base.md#isnull)
 - [toString](base.md#tostring)
 
 ## Functions
@@ -34,7 +36,7 @@
 
 #### Defined in
 
-[src/pure-immutable/base.ts:1](https://github.com/alpinisme/utils/blob/5571690/src/pure-immutable/base.ts#L1)
+[src/pure-immutable/base.ts:1](https://github.com/alpinisme/utils/blob/08ceb73/src/pure-immutable/base.ts#L1)
 
 ___
 
@@ -54,7 +56,63 @@ err is Error
 
 #### Defined in
 
-[src/pure-immutable/base.ts:5](https://github.com/alpinisme/utils/blob/5571690/src/pure-immutable/base.ts#L5)
+[src/pure-immutable/base.ts:5](https://github.com/alpinisme/utils/blob/08ceb73/src/pure-immutable/base.ts#L5)
+
+___
+
+### isNonNull
+
+▸ **isNonNull**<`T`\>(`val`): val is T
+
+type guard to narrow out null and undefined values -- useful for array filtering
+
+#### Type parameters
+
+| Name |
+| :------ |
+| `T` |
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `val` | `undefined` \| ``null`` \| `T` |
+
+#### Returns
+
+val is T
+
+#### Defined in
+
+[src/pure-immutable/base.ts:16](https://github.com/alpinisme/utils/blob/08ceb73/src/pure-immutable/base.ts#L16)
+
+___
+
+### isNull
+
+▸ **isNull**<`T`\>(`val`): val is undefined \| null
+
+type guard to check if null or undefined
+
+#### Type parameters
+
+| Name |
+| :------ |
+| `T` |
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `val` | `undefined` \| ``null`` \| `T` |
+
+#### Returns
+
+val is undefined \| null
+
+#### Defined in
+
+[src/pure-immutable/base.ts:23](https://github.com/alpinisme/utils/blob/08ceb73/src/pure-immutable/base.ts#L23)
 
 ___
 
@@ -80,4 +138,4 @@ ___
 
 #### Defined in
 
-[src/pure-immutable/base.ts:9](https://github.com/alpinisme/utils/blob/5571690/src/pure-immutable/base.ts#L9)
+[src/pure-immutable/base.ts:9](https://github.com/alpinisme/utils/blob/08ceb73/src/pure-immutable/base.ts#L9)
