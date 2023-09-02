@@ -1,20 +1,43 @@
 import { isNull, toString } from './base'
 
-const { entries, fromEntries } = Object
+export const { entries, fromEntries, keys } = Object
 
-export function isMatch<T extends Record<string, any>>(
-  checked: T,
-  comparator: Partial<T>,
-): Boolean {
-  return entries(comparator).every(([key, value]) => checked[key] === value)
+/**
+ * Compares `checked` against `comparator`, to see if all fields in
+ * `comparator` are equal in `checked`. Does not require that all
+ * properties in `checked` exist in `comparator`, even when nested.
+ *
+ * @example
+ * const checked = { a: 'a', b: { c: 'c', d: 'd' }}
+ * const comparator = { b: { c: 'c' } }
+ * isMatch(checked, comparator) // true
+ */
+export function isMatch<T extends Record<string, any>, U extends T>(
+  checked: U,
+  comparator: T,
+): boolean {
+  return keys(comparator).every((key) => {
+    const comparatorValue = comparator[key]
+    const checkedValue = checked[key]
+    return typeof comparatorValue === 'object'
+      ? isMatch(checkedValue, comparatorValue)
+      : checkedValue === comparatorValue
+  })
 }
 
-export function createMatcher<T extends Record<string, any>>(
+/**
+ * Curried version of isMatch, useful in higher order functions,
+ * such as array maps and filters.
+ */
+export function matches<T extends Record<string, any>>(
   comparator: Partial<T>,
-): (checked: T) => Boolean {
+): (checked: T) => boolean {
   return (checked) => isMatch(checked, comparator)
 }
 
+/**
+ * Creates partial shallow copy of `item`, copying only the specified `keys` over.
+ */
 export function pick<T extends Record<string, any>, Keys extends (keyof T)[]>(
   keys: Keys,
   item: T,
@@ -24,7 +47,9 @@ export function pick<T extends Record<string, any>, Keys extends (keyof T)[]>(
     Keys[number]
   >
 }
-
+/**
+ * Creates partial shallow copy of `item`, omitting the specified `keys` when copying.
+ */
 export function omit<T extends Record<string, any>, Keys extends (keyof T)[]>(
   keys: Keys,
   item: T,
@@ -83,3 +108,47 @@ export const curriedHas =
   (obj: Nullable<T>): obj is RequireKey<SubtypesWithKey<T, Key>, Key> => {
     return has(key, obj)
   }
+
+export function mapKeys<T extends {}>(obj: T, mapFn: (key: keyof T) => string) {
+  return fromEntries(entries(obj).map(([key, value]: any) => [mapFn(key), value])) as Record<
+    string,
+    T[keyof T]
+  >
+}
+
+// todo: improve typings (this currently only really works with a dictionary, where all values are the same type)
+export function filterMapKeys<T extends {}>(obj: T, mapFn: (key: keyof T) => string | undefined) {
+  return fromEntries(
+    entries(obj).reduce((acc: any, [key, value]: any) => {
+      const newKey = mapFn(key)
+      if (newKey != null) {
+        acc.push([newKey, value])
+      }
+      return acc
+    }, []),
+  ) as Record<string, T[keyof T]>
+}
+
+/**
+ * Given a keyMap object that maps old keys to new keys, copy an object over
+ * using the new keys and dropping any properties that are unmapped.
+ *
+ * @example
+ * const obj = {a: 1, b: 2}
+ * const keyMap = {a: 'alpha'}
+ * remapKeys(obj, keyMap) // {'alpha': 1}
+ */
+export function remapKeys<T extends {}, M extends Record<string, string>>(obj: T, keyMap: M) {
+  const remappedObj = {} as {
+    [K in M[keyof M]]: K extends keyof T ? T[K] : never
+  }
+
+  Object.keys(keyMap).forEach((key) => {
+    if (key in obj) {
+      const newKey = keyMap[key] as M[keyof M]
+      remappedObj[newKey] = obj[key as keyof T] as any
+    }
+  })
+
+  return remappedObj
+}

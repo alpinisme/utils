@@ -483,6 +483,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/lodash@npm:^4.14.197":
+  version: 4.14.197
+  resolution: "@types/lodash@npm:4.14.197"
+  checksum: 53d7567d1704de76cf33266c78062e0fd722d4b846e5b1417d0b6ef0ee41c0d9c451b92bc34f73d5f1fcc45c7d36511e92f6f47a9279b48157ba60a92ddaa078
+  languageName: node
+  linkType: hard
+
 "@types/node@npm:*":
   version: 18.15.9
   resolution: "@types/node@npm:18.15.9"
@@ -1447,6 +1454,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"lodash@npm:^4.17.21":
+  version: 4.17.21
+  resolution: "lodash@npm:4.17.21"
+  checksum: eb835a2e51d381e561e508ce932ea50a8e5a68f4ebdd771ea240d3048244a8d13658acbd502cd4829768c56f2e16bdd4340b9ea141297d472517b83868e677f7
+  languageName: node
+  linkType: hard
+
 "loupe@npm:^2.3.1, loupe@npm:^2.3.6":
   version: 2.3.6
   resolution: "loupe@npm:2.3.6"
@@ -2373,15 +2387,18 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "utils@workspace:."
   dependencies:
+    "@types/lodash": ^4.14.197
     "@vitest/coverage-c8": ^0.33.0
     fast-check: ^3.12.0
     husky: ^8.0.3
+    lodash: ^4.17.21
     prettier: ^3.0.3
     typedoc: ^0.25.0
     typedoc-plugin-markdown: ^3.16.0
     typescript: ^5.2.2
     vite: ^4.4.9
     vitest: ^0.34.3
+    zod: ^3.22.2
   languageName: unknown
   linkType: soft
 
@@ -2668,5 +2685,12 @@ __metadata:
   version: 1.0.0
   resolution: "yocto-queue@npm:1.0.0"
   checksum: 2cac84540f65c64ccc1683c267edce396b26b1e931aa429660aefac8fbe0188167b7aee815a3c22fa59a28a58d898d1a2b1825048f834d8d629f4c2a5d443801
+  languageName: node
+  linkType: hard
+
+"zod@npm:^3.22.2":
+  version: 3.22.2
+  resolution: "zod@npm:3.22.2"
+  checksum: 231e2180c8eabb56e88680d80baff5cf6cbe6d64df3c44c50ebe52f73081ecd0229b1c7215b9552537f537a36d9e36afac2737ddd86dc14e3519bdbc777e82b9
   languageName: node
   linkType: hard

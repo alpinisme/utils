@@ -1,5 +1,5 @@
 import { identity } from './base'
-import { createMatcher } from './object'
+import { matches } from './object'
 
 /**
  * take first of each unique value, given the accessor function
@@ -140,7 +140,7 @@ export function groupBy<T, Accessor extends (item: T) => string | number>(
 }
 
 export function findMatches<T extends Record<string, any>>(arr: T[], match: Partial<T>): T[] {
-  return arr.filter(createMatcher(match))
+  return arr.filter(matches(match))
 }
 
 // TODO: maybe combine some of the xBy into the base x and just have an optional second argument. typing that is a pain though, and the optional second argument would add overhead
