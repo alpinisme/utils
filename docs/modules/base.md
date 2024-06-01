@@ -36,7 +36,7 @@
 
 #### Defined in
 
-[src/pure-immutable/base.ts:1](https://github.com/alpinisme/utils/blob/08ceb73/src/pure-immutable/base.ts#L1)
+[src/pure-immutable/base.ts:1](https://github.com/alpinisme/utils/blob/b18b845/src/pure-immutable/base.ts#L1)
 
 ___
 
@@ -56,7 +56,7 @@ err is Error
 
 #### Defined in
 
-[src/pure-immutable/base.ts:5](https://github.com/alpinisme/utils/blob/08ceb73/src/pure-immutable/base.ts#L5)
+[src/pure-immutable/base.ts:5](https://github.com/alpinisme/utils/blob/b18b845/src/pure-immutable/base.ts#L5)
 
 ___
 
@@ -84,7 +84,7 @@ val is T
 
 #### Defined in
 
-[src/pure-immutable/base.ts:16](https://github.com/alpinisme/utils/blob/08ceb73/src/pure-immutable/base.ts#L16)
+[src/pure-immutable/base.ts:16](https://github.com/alpinisme/utils/blob/b18b845/src/pure-immutable/base.ts#L16)
 
 ___
 
@@ -112,7 +112,7 @@ val is undefined \| null
 
 #### Defined in
 
-[src/pure-immutable/base.ts:23](https://github.com/alpinisme/utils/blob/08ceb73/src/pure-immutable/base.ts#L23)
+[src/pure-immutable/base.ts:23](https://github.com/alpinisme/utils/blob/b18b845/src/pure-immutable/base.ts#L23)
 
 ___
 
@@ -138,4 +138,4 @@ ___
 
 #### Defined in
 
-[src/pure-immutable/base.ts:9](https://github.com/alpinisme/utils/blob/08ceb73/src/pure-immutable/base.ts#L9)
+[src/pure-immutable/base.ts:9](https://github.com/alpinisme/utils/blob/b18b845/src/pure-immutable/base.ts#L9)

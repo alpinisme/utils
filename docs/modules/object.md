@@ -17,6 +17,7 @@
 - [filterMapKeys](object.md#filtermapkeys)
 - [fromEntries](object.md#fromentries)
 - [has](object.md#has)
+- [invert](object.md#invert)
 - [isMatch](object.md#ismatch)
 - [keys](object.md#keys-1)
 - [mapKeys](object.md#mapkeys)
@@ -41,7 +42,7 @@ extracts all available keys from a union type, not just shared keys
 
 #### Defined in
 
-[src/pure-immutable/object.ts:71](https://github.com/alpinisme/utils/blob/08ceb73/src/pure-immutable/object.ts#L71)
+[src/pure-immutable/object.ts:71](https://github.com/alpinisme/utils/blob/b18b845/src/pure-immutable/object.ts#L71)
 
 ___
 
@@ -59,7 +60,7 @@ extracts all keys that are guaranteed to be in T (i.e., if union type, only shar
 
 #### Defined in
 
-[src/pure-immutable/object.ts:66](https://github.com/alpinisme/utils/blob/08ceb73/src/pure-immutable/object.ts#L66)
+[src/pure-immutable/object.ts:66](https://github.com/alpinisme/utils/blob/b18b845/src/pure-immutable/object.ts#L66)
 
 ___
 
@@ -78,7 +79,7 @@ turn optional field into required
 
 #### Defined in
 
-[src/pure-immutable/object.ts:76](https://github.com/alpinisme/utils/blob/08ceb73/src/pure-immutable/object.ts#L76)
+[src/pure-immutable/object.ts:76](https://github.com/alpinisme/utils/blob/b18b845/src/pure-immutable/object.ts#L76)
 
 ## Functions
 
@@ -119,7 +120,7 @@ obj is RequireKey<SubtypesWithKey<T, Key\>, Key\>
 
 #### Defined in
 
-[src/pure-immutable/object.ts:107](https://github.com/alpinisme/utils/blob/08ceb73/src/pure-immutable/object.ts#L107)
+[src/pure-immutable/object.ts:107](https://github.com/alpinisme/utils/blob/b18b845/src/pure-immutable/object.ts#L107)
 
 ___
 
@@ -192,7 +193,7 @@ ___
 
 #### Defined in
 
-[src/pure-immutable/object.ts:120](https://github.com/alpinisme/utils/blob/08ceb73/src/pure-immutable/object.ts#L120)
+[src/pure-immutable/object.ts:120](https://github.com/alpinisme/utils/blob/b18b845/src/pure-immutable/object.ts#L120)
 
 ___
 
@@ -268,7 +269,33 @@ obj is RequireKey<SubtypesWithKey<T, Key\>, Key\>
 
 #### Defined in
 
-[src/pure-immutable/object.ts:93](https://github.com/alpinisme/utils/blob/08ceb73/src/pure-immutable/object.ts#L93)
+[src/pure-immutable/object.ts:93](https://github.com/alpinisme/utils/blob/b18b845/src/pure-immutable/object.ts#L93)
+
+___
+
+### invert
+
+▸ **invert**<`T`\>(`obj`): `Inverted`<`T`\>
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | extends `Record`<`PropertyKey`, `PropertyKey`\> |
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `obj` | `T` |
+
+#### Returns
+
+`Inverted`<`T`\>
+
+#### Defined in
+
+[src/pure-immutable/object.ts:171](https://github.com/alpinisme/utils/blob/b18b845/src/pure-immutable/object.ts#L171)
 
 ___
 
@@ -308,7 +335,7 @@ isMatch(checked, comparator) // true
 
 #### Defined in
 
-[src/pure-immutable/object.ts:15](https://github.com/alpinisme/utils/blob/08ceb73/src/pure-immutable/object.ts#L15)
+[src/pure-immutable/object.ts:15](https://github.com/alpinisme/utils/blob/b18b845/src/pure-immutable/object.ts#L15)
 
 ___
 
@@ -375,7 +402,7 @@ ___
 
 #### Defined in
 
-[src/pure-immutable/object.ts:112](https://github.com/alpinisme/utils/blob/08ceb73/src/pure-immutable/object.ts#L112)
+[src/pure-immutable/object.ts:112](https://github.com/alpinisme/utils/blob/b18b845/src/pure-immutable/object.ts#L112)
 
 ___
 
@@ -416,7 +443,7 @@ such as array maps and filters.
 
 #### Defined in
 
-[src/pure-immutable/object.ts:32](https://github.com/alpinisme/utils/blob/08ceb73/src/pure-immutable/object.ts#L32)
+[src/pure-immutable/object.ts:32](https://github.com/alpinisme/utils/blob/b18b845/src/pure-immutable/object.ts#L32)
 
 ___
 
@@ -446,7 +473,7 @@ Creates partial shallow copy of `item`, omitting the specified `keys` when copyi
 
 #### Defined in
 
-[src/pure-immutable/object.ts:53](https://github.com/alpinisme/utils/blob/08ceb73/src/pure-immutable/object.ts#L53)
+[src/pure-immutable/object.ts:53](https://github.com/alpinisme/utils/blob/b18b845/src/pure-immutable/object.ts#L53)
 
 ___
 
@@ -476,7 +503,7 @@ Creates partial shallow copy of `item`, copying only the specified `keys` over.
 
 #### Defined in
 
-[src/pure-immutable/object.ts:41](https://github.com/alpinisme/utils/blob/08ceb73/src/pure-immutable/object.ts#L41)
+[src/pure-immutable/object.ts:41](https://github.com/alpinisme/utils/blob/b18b845/src/pure-immutable/object.ts#L41)
 
 ___
 
@@ -486,6 +513,10 @@ ___
 
 Given a keyMap object that maps old keys to new keys, copy an object over
 using the new keys and dropping any properties that are unmapped.
+
+Note that the generic type must be specified at the call site to get best type results,
+since otherwise TypeScript may infer `never` for properties that did not exist on original obj.
+This isn't an unsafe coercion, just helping TypeScript narrow the generic correctly.
 
 #### Type parameters
 
@@ -515,4 +546,4 @@ remapKeys(obj, keyMap) // {'alpha': 1}
 
 #### Defined in
 
-[src/pure-immutable/object.ts:141](https://github.com/alpinisme/utils/blob/08ceb73/src/pure-immutable/object.ts#L141)
+[src/pure-immutable/object.ts:145](https://github.com/alpinisme/utils/blob/b18b845/src/pure-immutable/object.ts#L145)

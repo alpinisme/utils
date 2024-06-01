@@ -37,7 +37,7 @@
 
 #### Defined in
 
-[src/pure-immutable/date-time.ts:61](https://github.com/alpinisme/utils/blob/08ceb73/src/pure-immutable/date-time.ts#L61)
+[src/pure-immutable/date-time.ts:61](https://github.com/alpinisme/utils/blob/b18b845/src/pure-immutable/date-time.ts#L61)
 
 ___
 
@@ -62,7 +62,7 @@ Beyond that, calendars become significant.
 
 #### Defined in
 
-[src/pure-immutable/date-time.ts:91](https://github.com/alpinisme/utils/blob/08ceb73/src/pure-immutable/date-time.ts#L91)
+[src/pure-immutable/date-time.ts:91](https://github.com/alpinisme/utils/blob/b18b845/src/pure-immutable/date-time.ts#L91)
 
 ___
 
@@ -84,4 +84,4 @@ Checks if date object contains a valid date
 
 #### Defined in
 
-[src/pure-immutable/date-time.ts:102](https://github.com/alpinisme/utils/blob/08ceb73/src/pure-immutable/date-time.ts#L102)
+[src/pure-immutable/date-time.ts:102](https://github.com/alpinisme/utils/blob/b18b845/src/pure-immutable/date-time.ts#L102)
