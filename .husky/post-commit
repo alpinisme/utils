@@ -13,6 +13,6 @@ if git diff-tree --no-commit-id --name-only HEAD -r  | grep -q "[^test]\.ts"; th
         yarn generate:docs
         git add docs
         git commit -m "docs: auto update"
-        echo "$color\\nnDocs successfully updated\n\n"
+        echo "$color\n\nDocs successfully updated\n\n"
     fi
 fi
