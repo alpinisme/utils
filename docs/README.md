@@ -1,4 +1,6 @@
-utils / [Exports](modules.md)
+**utils** • [**Docs**](globals.md)
+
+***
 
 # A Library of Utility Functions
 
